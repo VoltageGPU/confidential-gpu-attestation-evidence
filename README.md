@@ -26,7 +26,7 @@ test, and are listed as *not attested* at https://voltagegpu.com/api/attestation
 ## Re-verify a bundle yourself
 
 ```bash
-pip install voltage-verify            # MIT, https://github.com/Jabsama/voltage-verify
+pip install voltage-verify            # MIT, https://github.com/VoltageGPU/voltage-verify
 
 # RTX PRO 6000, 17 Sept 2026 (challenge is printed in the folder's manifest.json)
 cd rtx6000b-2026-09-17
@@ -65,14 +65,14 @@ boot on and debug off, both bound to a value the tenant chose after issuing it.
 Verified does **not** mean the GPU executed a particular model, nor anything about the host's memory
 integrity mode (logical vs cryptographic), which is not readable from inside a guest. After DDRop
 (September 2026) that distinction matters; see `tdx-guest-probe` for what a guest can and cannot see:
-https://github.com/Jabsama/tdx-guest-probe
+https://github.com/VoltageGPU/tdx-guest-probe
 
 ## Links
 
 - Public index of attested SKUs (JSON, no account): https://voltagegpu.com/api/attestation/evidence
 - The article with the original outputs: https://voltagegpu.com/blog/two-proofs-tdx-nvidia-h200-attestation-tenant
 - The API-only run, and the two gaps it found: https://voltagegpu.com/blog/confidential-gpu-from-the-api-alone-deploy-attest-verify
-- Verifier source: https://github.com/Jabsama/voltage-verify
+- Verifier source: https://github.com/VoltageGPU/voltage-verify
 
 ## License
 
