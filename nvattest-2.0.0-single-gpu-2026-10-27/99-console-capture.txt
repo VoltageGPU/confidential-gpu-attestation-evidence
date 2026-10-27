@@ -1,0 +1,588 @@
+[local] 14:52:56 waiting for sshd
+[local] sshd ready after 1 try(ies)
+[local] 14:53:00 upload
+[local] 14:53:05 run
+
+===== 14:53:07 0. sudo =====
+passwordless sudo OK
+
+===== 14:53:07 1. environment =====
+date_utc:  2026-10-27T14:53:07Z
+kernel:    6.8.0-110-generic
+os:        Ubuntu 24.04.4 LTS
+cloud image build: 
+virt:      kvm
+tdx_guest: crw------- 1 root root 10, 262 Oct 27  2026 /dev/tdx_guest
+[    0.000000] tdx: Guest detected
+[   11.212291] process: using TDX aware idle routine
+[   11.212291] Memory Encryption Features active: Intel TDX
+[   34.300058] systemd[1]: Detected confidential virtualization tdx.
+--- nvidia-smi
+NVIDIA-SMI version  : 595.71.05
+NVML version        : 595.71
+DRIVER version      : 595.71.05
+CUDA Version        : 13.2
+NVIDIA H100 80GB HBM3, 595.71.05, 96.00.CF.00.01, 81559 MiB
+    CC State                   : ON
+    Multi-GPU Mode             : None
+    CPU CC Capabilities        : INTEL TDX
+    GPU CC Capabilities        : CC Capable
+    CC GPUs Ready State        : Ready
+--- packages
+ca-certificates 20240203
+ca-certificates-java 20240118
+cuda-keyring 1.1-1
+curl 8.5.0-2ubuntu10.8
+libcurl3t64-gnutls 8.5.0-2ubuntu10.8
+libcurl4t64 8.5.0-2ubuntu10.8
+libnvidia-compute 595.71.05-1ubuntu1
+libssl3t64 3.0.13-0ubuntu3.9
+libxml2 2.9.14+dfsg-1.3ubuntu3.7
+libxmlsec1t64 1.2.39-5build2
+libxmlsec1t64-openssl 1.2.39-5build2
+linux-image-6.8.0-110-generic 6.8.0-110.110
+linux-image-generic 6.8.0-110.110
+nvidia-driver-open 595.71.05-1ubuntu1
+nvidia-kernel-common 595.71.05-1ubuntu1
+nvidia-kernel-source-open 595.71.05-1ubuntu1
+openssl 3.0.13-0ubuntu3.9
+--- system TLS stack
+OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
+built on: Tue Apr  7 12:05:56 2026 UTC
+OPENSSLDIR: "/usr/lib/ssl"
+curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+-rw-r--r-- 1 root root 219342 Feb 10  2026 /etc/ssl/certs/ca-certificates.crt
+--- proxy and TLS-related environment
+user: none set
+root: none set
+no proxy in /etc/environment or apt configuration
+IPv6 default routes: 0
+
+===== 14:53:08 2. system curl -v (user and root) =====
+--- ocsp.ndis.nvidia.com
+resolves to: 166.117.113.121 166.117.200.57 
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
+RESULT user: http=405 ip=166.117.113.121 verify=0 connect=0.014041s tls=0.083907s total=0.114308s
+RESULT root: http=000 ip=166.117.113.121 verify=1 connect=0.000000s tls=0.000000s total=20.002935s
+--- rim.attestation.nvidia.com
+resolves to: 166.117.155.59 166.117.56.89 
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
+RESULT user: http=403 ip=166.117.56.89 verify=0 connect=0.014958s tls=0.086024s total=0.116422s
+RESULT root: http=403 ip=166.117.56.89 verify=0 connect=0.017335s tls=0.082148s total=0.113055s
+--- nras.attestation.nvidia.com
+resolves to: 34.120.45.54 
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519 / RSASSA-PSS
+RESULT user: http=200 ip=34.120.45.54 verify=0 connect=0.016977s tls=0.086772s total=0.123988s
+RESULT root: http=200 ip=34.120.45.54 verify=0 connect=0.015149s tls=0.086554s total=0.136324s
+--- ocsp.ndis.nvidia.com over plain HTTP
+RESULT http80: http=405 ip=166.117.113.121 total=0.069228s
+
+===== 14:53:29 3. openssl s_client =====
+--- ocsp.ndis.nvidia.com
+--- rim.attestation.nvidia.com
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_128_GCM_SHA256
+Peer certificate: CN = attestation.nvidia.com
+Hash used: SHA256
+Signature type: RSA-PSS
+Verification: OK
+Server Temp Key: X25519, 253 bits
+DONE
+--- nras.attestation.nvidia.com
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN = *.attestation.nvidia.com
+Hash used: SHA256
+Signature type: RSA-PSS
+Verification: OK
+Server Temp Key: X25519, 253 bits
+DONE
+ 0 s:CN = *.attestation.nvidia.com
+   i:C = US, O = Google Trust Services, CN = WR3
+   v:NotBefore: Oct  2 18:58:16 2026 GMT; NotAfter: Dec 31 19:54:11 2026 GMT
+ 1 s:C = US, O = Google Trust Services, CN = WR3
+   i:C = US, O = Google Trust Services LLC, CN = GTS Root R1
+   v:NotBefore: Dec 13 09:00:00 2023 GMT; NotAfter: Feb 20 14:00:00 2029 GMT
+ 2 s:C = US, O = Google Trust Services LLC, CN = GTS Root R1
+   i:C = BE, O = GlobalSign nv-sa, OU = Root CA, CN = GlobalSign Root CA
+   v:NotBefore: Jun 19 00:00:42 2020 GMT; NotAfter: Jan 28 00:00:42 2028 GMT
+
+===== 14:54:29 3b. hand-built ClientHello, small (x25519) vs large (X25519MLKEM768 + x25519) =====
+ocsp.ndis.nvidia.com         small hello= 237B -> no answer within 10s
+ocsp.ndis.nvidia.com         large hello=1459B -> ServerHello (or HelloRetryRequest) received in 0.07s
+rim.attestation.nvidia.com   small hello= 243B -> ServerHello (or HelloRetryRequest) received in 0.06s
+rim.attestation.nvidia.com   large hello=1465B -> no answer within 10s
+nras.attestation.nvidia.com  small hello= 244B -> ServerHello (or HelloRetryRequest) received in 0.03s
+nras.attestation.nvidia.com  large hello=1466B -> TLS alert illegal_parameter in 0.03s
+
+===== 14:54:49 4. apt: NVIDIA network repository, strace, binutils, tcpdump =====
+(Reading database ... 116603 files and directories currently installed.)
+Preparing to unpack /tmp/cuda-keyring.deb ...
+Unpacking cuda-keyring (1.1-1) over (1.1-1) ...
+Setting up cuda-keyring (1.1-1) ...
+--- available versions
+  nvattest | 2.0.0.1790976895-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.2.2.1780962352-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.2.1.1777487608-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.2.0.1772475102-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.1.1.1770245582-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.1.0.1770093675-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.0.0.1768244834-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.0.0.1765816912-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 2.0.0.1790976895-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.2.2.1780962352-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.2.1.1777487608-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.2.0.1772475102-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.1.1.1770245582-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.1.0.1770093675-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.0.0.1768244834-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.0.0.1765816912-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+/usr/bin/strace
+/usr/bin/nm
+/usr/bin/readelf
+/usr/bin/tcpdump
+baseline nvattest: not on the image: installed 1.2.0.1772475102-1 from the NVIDIA repository
+
+===== 14:55:11 5. baseline nvattest (not on the image: installed 1.2.0.1772475102-1 from the NVIDIA repository) =====
+origin: not on the image: installed 1.2.0.1772475102-1 from the NVIDIA repository
+packages: libnvat 1.2.0.1772475102-1  nvattest 1.2.0.1772475102-1  
+nvattest version:
+nvattest 1.2.0+1772475102 (Linux/x86_64)
+--- ldd /usr/bin/nvattest
+	linux-vdso.so.1 (0x00007fff3ca5e000)
+	libnvat.so.1 => /lib/x86_64-linux-gnu/libnvat.so.1 (0x000076cc0de00000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x000076cc0da00000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x000076cc0dd17000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x000076cc0f452000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x000076cc0d600000)
+	libxml2.so.2 => /lib/x86_64-linux-gnu/libxml2.so.2 (0x000076cc0d81e000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x000076cc0dcfb000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x000076cc0dcf6000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x000076cc0dcf1000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x000076cc0dcec000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x000076cc0dce7000)
+	/lib64/ld-linux-x86-64.so.2 (0x000076cc0f578000)
+	libicuuc.so.74 => /lib/x86_64-linux-gnu/libicuuc.so.74 (0x000076cc0d200000)
+	liblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x000076cc0dcb5000)
+	libicudata.so.74 => /lib/x86_64-linux-gnu/libicudata.so.74 (0x000076cc0b400000)
+--- ldd /lib/x86_64-linux-gnu/libnvat.so.1
+	linux-vdso.so.1 (0x00007fff65dae000)
+	libxml2.so.2 => /lib/x86_64-linux-gnu/libxml2.so.2 (0x00007cfff4c1e000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007cfff6456000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007cfff4bf0000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x00007cfff6451000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007cfff4beb000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007cfff4be6000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007cfff4afd000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007cfff4af8000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007cfff4800000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007cfff647e000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007cfff4400000)
+	libicuuc.so.74 => /lib/x86_64-linux-gnu/libicuuc.so.74 (0x00007cfff4000000)
+	liblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007cfff4ac4000)
+	libicudata.so.74 => /lib/x86_64-linux-gnu/libicudata.so.74 (0x00007cfff2200000)
+--- NEEDED entries of /lib/x86_64-linux-gnu/libnvat.so.1
+ 0x0000000000000001 (NEEDED)             Shared library: [libxml2.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libz.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libutil.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [librt.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+--- TLS/HTTP stack strings embedded in /lib/x86_64-linux-gnu/libnvat.so.1
+OpenSSL 3.6.1 27 Jan 2026
+OPENSSLDIR: "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install"
+ENGINESDIR: "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/lib/engines-3"
+MODULESDIR: "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/lib/ossl-modules"
+--- dynamic symbols defined by /lib/x86_64-linux-gnu/libnvat.so.1
+OpenSSL-like (SSL_*, OPENSSL_*, EVP_*, X509_*): 2154
+libcurl-like (curl_*): 0
+--- absolute CA paths compiled into the binary and library
+/etc/ssl/certs/ca-certificates.crt
+--- 12-baseline-gpu-local.txt
+2026-10-27 14:55:37.940 [nv_x509.cpp:466 generate_ocsp_claims] [debug] Generating OCSP claims
+2026-10-27 14:55:38.188 [nv_http.cpp:142 do_request_as_string] [error] Fatal libcurl error code: SSL connect error (35)
+2026-10-27 14:55:38.190 [nv_ocsp.cpp:163 get_ocsp_response] [error] Failed to perform OCSP check with url: https://ocsp.ndis.nvidia.com
+2026-10-27 14:55:38.190 [gpu/evidence.cpp:299 generate_attestation_report_claims] [error] Failed to validate attestation report certificate chain
+2026-10-27 14:55:38.190 [gpu/evidence.cpp:262 generate_gpu_evidence_claims] [error] Failed to generate attestation report claims
+2026-10-27 14:55:38.191 [attestation.cpp:323 attest_gpus] [error] Failed to verify GPU evidence
+2026-10-27 14:55:38.191 [nvat.cpp:668 nvat_attest_device] [error] Error while performing device attestation
+GPU attestation failed!
+Error 002: Internal Error
+  | Error while performing device attestation
+  | Failed to perform OCSP check with url: https://ocsp.ndis.nvidia.com
+  | Fatal libcurl error code: SSL connect error (35)
+exit=2 elapsed_ms=405
+--- 13-baseline-strace.txt (973 lines), run exit=0
+connect() calls:
+     11 sin_addr=inet_addr("127.0.0.53")
+     21 sin_addr=inet_addr("166.117.113.121")
+      3 sin_addr=inet_addr("166.117.155.59")
+     18 sin_addr=inet_addr("166.117.200.57")
+      4 sin_addr=inet_addr("166.117.56.89")
+      2 sun_path="/var/run/nscd/socket"
+CA / certificate files opened:
+      2 "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/cert.pem", O_RDONLY) = -1 ENOENT
+      1 "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/openssl.cnf", O_RDONLY) = -1 ENOENT
+     11 "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+--- 14-baseline-gpu-local-ocsp-http.txt
+2026-10-27 14:57:19.354 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113039
+2026-10-27 14:57:19.354 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199439
+2026-10-27 14:57:19.354 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation, Issuer: CN = NVIDIA Device Identity CA, O = NVIDIA is: good
+2026-10-27 14:57:19.447 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:57:19.460 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:57:19.460 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:57:19.460 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113039
+2026-10-27 14:57:19.460 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199439
+2026-10-27 14:57:19.460 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation is: good
+2026-10-27 14:57:19.553 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:57:19.569 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:57:19.570 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:57:19.570 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113039
+2026-10-27 14:57:19.570 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199439
+2026-10-27 14:57:19.570 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: serialNumber = 419E1E27E2AF138634, C = US, O = NVIDIA Corporation, CN = GH100 A01 GSP BROM, Issuer: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US is: good
+2026-10-27 14:57:24.572 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:57:29.590 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:57:29.846 [nv_x509.cpp:466 generate_ocsp_claims] [debug] Generating OCSP claims
+2026-10-27 14:57:59.848 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:58:00.075 [nv_http.cpp:142 do_request_as_string] [error] Fatal libcurl error code: Failure when receiving data from the peer (56)
+2026-10-27 14:58:00.075 [nv_ocsp.cpp:163 get_ocsp_response] [error] Failed to perform OCSP check with url: http://ocsp.ndis.nvidia.com
+2026-10-27 14:58:00.075 [rim.cpp:265 generate_rim_claims] [error] Failed to generate certificate chain claims for RIM with id NV_GPU_DRIVER_GH100_595.71.05
+2026-10-27 14:58:00.076 [attestation.cpp:323 attest_gpus] [error] Failed to verify GPU evidence
+2026-10-27 14:58:00.076 [nvat.cpp:668 nvat_attest_device] [error] Error while performing device attestation
+GPU attestation failed!
+Error 002: Internal Error
+  | Error while performing device attestation
+  | Failed to perform OCSP check with url: http://ocsp.ndis.nvidia.com
+  | Fatal libcurl error code: Failure when receiving data from the peer (56)
+exit=2 elapsed_ms=71010
+
+===== 14:58:00 6. install nvattest 2.0.0 from the NVIDIA repository =====
+target version: 2.0.0.1790976895-1
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+origin: installed 2.0.0.1790976895-1 from the NVIDIA repository
+packages: libnvat 2.0.0.1790976895-1  nvattest 2.0.0.1790976895-1  
+nvattest version:
+nvattest 2.0.0+1790976895 (Linux/x86_64)
+--- ldd /usr/bin/nvattest
+	linux-vdso.so.1 (0x00007ffdfe3bc000)
+	libnvat.so.2 => /lib/x86_64-linux-gnu/libnvat.so.2 (0x00007275f6e00000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007275f6a00000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007275f6d17000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007275f6ce9000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007275f6600000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007275f879c000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x00007275f8797000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007275f6ce4000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007275f6cdf000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007275f6cda000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007275f88df000)
+--- ldd /lib/x86_64-linux-gnu/libnvat.so.2
+	linux-vdso.so.1 (0x00007fff10d0e000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007ba4fbf5c000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ba4fbf2e000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x00007ba4fbf29000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007ba4fbf24000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ba4fbf1f000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ba4fbe34000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ba4fbe2f000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ba4fa000000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ba4fbf84000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ba4f9c00000)
+--- NEEDED entries of /lib/x86_64-linux-gnu/libnvat.so.2
+ 0x0000000000000001 (NEEDED)             Shared library: [libz.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libutil.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [librt.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+--- TLS/HTTP stack strings embedded in /lib/x86_64-linux-gnu/libnvat.so.2
+OpenSSL 3.6.4 25 Aug 2026
+OPENSSLDIR: "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install"
+ENGINESDIR: "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/lib/engines-3"
+MODULESDIR: "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/lib/ossl-modules"
+--- dynamic symbols defined by /lib/x86_64-linux-gnu/libnvat.so.2
+OpenSSL-like (SSL_*, OPENSSL_*, EVP_*, X509_*): 2133
+libcurl-like (curl_*): 0
+--- absolute CA paths compiled into the binary and library
+/etc/ssl/certs
+/etc/ssl/certs/ca-certificates.crt
+
+===== 14:58:07 7. nvattest 2.0.0, GPU, local verifier =====
+--- 22-v2-gpu-local.txt
+2026-10-27 14:58:10.057 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113090
+2026-10-27 14:58:10.057 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113090
+2026-10-27 14:58:10.057 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199490
+2026-10-27 14:58:15.063 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5002 milliseconds (28)
+2026-10-27 14:58:20.150 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5001 milliseconds (28)
+2026-10-27 14:58:20.464 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:58:20.476 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:58:20.477 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:58:20.477 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113100
+2026-10-27 14:58:20.477 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113100
+2026-10-27 14:58:20.477 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199500
+2026-10-27 14:58:25.481 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5001 milliseconds (28)
+2026-10-27 14:58:25.604 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:58:25.621 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:58:25.621 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:58:25.622 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113105
+2026-10-27 14:58:25.622 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113105
+2026-10-27 14:58:25.622 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199505
+2026-10-27 14:58:25.622 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation, Issuer: CN = NVIDIA Device Identity CA, O = NVIDIA is: good
+2026-10-27 14:58:25.622 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation is: good
+2026-10-27 14:58:25.622 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: serialNumber = 419E1E27E2AF138634, C = US, O = NVIDIA Corporation, CN = GH100 A01 GSP BROM, Issuer: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US is: good
+2026-10-27 14:58:25.871 [nv_http.cpp:203 do_request_as_string] [error] Fatal libcurl error code: SSL connect error: Recv failure: Connection reset by peer (35)
+2026-10-27 14:58:25.871 [rim.cpp:494 get_rim] [error] Failed to download RIM from https://rim.attestation.nvidia.com/v1/rim/NV_GPU_DRIVER_GH100_595.71.05
+2026-10-27 14:58:25.871 [attestation.cpp:323 attest_gpus] [error] Failed to verify GPU evidence
+2026-10-27 14:58:25.871 [nvat.cpp:1025 nvat_attest_device] [error] Error while performing device attestation
+GPU attestation failed!
+Error 002: Internal Error
+  | Error while performing device attestation
+  | Fatal libcurl error code: SSL connect error: Recv failure: Connection reset by peer (35)
+exit=2 elapsed_ms=16121
+
+===== 14:58:26 8. nvattest 2.0.0, GPU, remote verifier (NRAS) =====
+--- 23-v2-gpu-remote.txt
+GPU attestation was successful
+        Status: valid, OCSP: good
+        Status: valid, OCSP: good
+        Status: valid, OCSP: good
+exit=0 elapsed_ms=974
+
+===== 14:58:27 9. nvattest 2.0.0 under strace =====
+--- 24-v2-strace.txt (983 lines), run exit=0
+connect() calls:
+     33 sin_addr=inet_addr("127.0.0.53")
+     20 sin_addr=inet_addr("166.117.113.121")
+      6 sin_addr=inet_addr("166.117.155.59")
+     12 sin_addr=inet_addr("166.117.200.57")
+      2 sin_addr=inet_addr("166.117.56.89")
+      2 sun_path="/var/run/nscd/socket"
+CA / certificate files opened:
+      2 "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/cert.pem", O_RDONLY) = -1 ENOENT
+      1 "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/openssl.cnf", O_RDONLY) = -1 ENOENT
+     10 "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 19
+      8 "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+
+===== 14:59:07 10. nvattest 2.0.0 with --tls-ca-cert / --tls-ca-path / OCSP over HTTP =====
+--- 25-v2-gpu-local-tls-ca-cert.txt
+2026-10-27 14:59:07.802 [nv_x509.cpp:561 generate_ocsp_claims] [debug] Generating OCSP claims
+2026-10-27 14:59:12.808 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5001 milliseconds (28)
+2026-10-27 14:59:17.818 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5001 milliseconds (28)
+2026-10-27 14:59:18.058 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:59:18.067 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:59:18.067 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:59:18.067 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113158
+2026-10-27 14:59:18.067 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113158
+2026-10-27 14:59:18.067 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199558
+2026-10-27 14:59:18.201 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:59:18.215 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:59:18.215 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:59:18.215 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113158
+2026-10-27 14:59:18.215 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113158
+2026-10-27 14:59:18.215 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199558
+2026-10-27 14:59:18.463 [nv_http.cpp:203 do_request_as_string] [error] Fatal libcurl error code: SSL connect error: Recv failure: Connection reset by peer (35)
+2026-10-27 14:59:18.463 [nv_ocsp.cpp:327 get_ocsp_response] [error] Failed to perform OCSP check with url: https://ocsp.ndis.nvidia.com
+2026-10-27 14:59:18.463 [gpu/evidence.cpp:310 generate_attestation_report_claims] [error] Failed to validate attestation report certificate chain
+2026-10-27 14:59:18.463 [gpu/evidence.cpp:273 generate_gpu_evidence_claims] [error] Failed to generate attestation report claims
+2026-10-27 14:59:18.463 [attestation.cpp:323 attest_gpus] [error] Failed to verify GPU evidence
+2026-10-27 14:59:18.463 [nvat.cpp:1025 nvat_attest_device] [error] Error while performing device attestation
+GPU attestation failed!
+Error 002: Internal Error
+  | Error while performing device attestation
+  | Failed to perform OCSP check with url: https://ocsp.ndis.nvidia.com
+  | Fatal libcurl error code: SSL connect error: Recv failure: Connection reset by peer (35)
+exit=2 elapsed_ms=10811
+--- 26-v2-gpu-local-tls-ca-path.txt
+2026-10-27 14:59:45.011 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:59:45.011 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113184
+2026-10-27 14:59:45.011 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113184
+2026-10-27 14:59:45.011 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199584
+2026-10-27 14:59:45.146 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:59:45.162 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:59:45.162 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:59:45.162 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113185
+2026-10-27 14:59:45.162 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113185
+2026-10-27 14:59:45.162 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199585
+2026-10-27 14:59:50.168 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5002 milliseconds (28)
+2026-10-27 14:59:50.385 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:59:50.404 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:59:50.404 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:59:50.404 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113190
+2026-10-27 14:59:50.404 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113190
+2026-10-27 14:59:50.404 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199590
+2026-10-27 14:59:50.404 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA is: good
+2026-10-27 14:59:50.404 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: C = US, O = NVIDIA, CN = NVIDIA Reference Value L3 GH100 003, Issuer: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US is: good
+2026-10-27 14:59:50.404 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: C = US, ST = CA, L = Santa Clara, O = NVIDIA Corporation, CN = HCC RIM L4 Signer, Issuer: C = US, O = NVIDIA, CN = NVIDIA Reference Value L3 GH100 003 is: good
+2026-10-27 14:59:55.420 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5001 milliseconds (28)
+2026-10-27 14:59:55.710 [nv_http.cpp:203 do_request_as_string] [error] Fatal libcurl error code: SSL connect error: Recv failure: Connection reset by peer (35)
+2026-10-27 14:59:55.710 [rim.cpp:494 get_rim] [error] Failed to download RIM from https://rim.attestation.nvidia.com/v1/rim/NV_GPU_VBIOS_G520_0200_885_9600CF0001
+2026-10-27 14:59:55.711 [attestation.cpp:323 attest_gpus] [error] Failed to verify GPU evidence
+2026-10-27 14:59:55.711 [nvat.cpp:1025 nvat_attest_device] [error] Error while performing device attestation
+GPU attestation failed!
+Error 002: Internal Error
+  | Error while performing device attestation
+  | Fatal libcurl error code: SSL connect error: Recv failure: Connection reset by peer (35)
+exit=2 elapsed_ms=37233
+--- 27-v2-gpu-local-ocsp-http.txt
+2026-10-27 14:59:56.107 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113196
+2026-10-27 14:59:56.107 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199596
+2026-10-27 15:00:26.109 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Operation timed out after 30001 milliseconds with 0 bytes received (28)
+2026-10-27 15:00:26.232 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 15:00:26.253 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 15:00:26.253 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 15:00:26.253 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113226
+2026-10-27 15:00:26.253 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113226
+2026-10-27 15:00:26.253 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199626
+2026-10-27 15:00:26.253 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation, Issuer: CN = NVIDIA Device Identity CA, O = NVIDIA is: good
+2026-10-27 15:00:26.253 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation is: good
+2026-10-27 15:00:26.253 [nv_x509.cpp:597 generate_ocsp_claims] [debug] OCSP status for cert: Subject: serialNumber = 419E1E27E2AF138634, C = US, O = NVIDIA Corporation, CN = GH100 A01 GSP BROM, Issuer: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US is: good
+2026-10-27 15:00:31.260 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Connection timed out after 5002 milliseconds (28)
+2026-10-27 15:00:31.411 [nv_x509.cpp:561 generate_ocsp_claims] [debug] Generating OCSP claims
+2026-10-27 15:01:01.414 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Operation timed out after 30001 milliseconds with 0 bytes received (28)
+2026-10-27 15:01:01.565 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 15:01:01.574 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 15:01:01.574 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 15:01:01.574 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113261
+2026-10-27 15:01:01.574 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113261
+2026-10-27 15:01:01.574 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199661
+2026-10-27 15:01:31.577 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Operation timed out after 30002 milliseconds with 0 bytes received (28)
+2026-10-27 15:01:31.741 [nv_ocsp.cpp:230 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 15:01:31.754 [nv_ocsp.cpp:431 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 15:01:31.754 [nv_ocsp.cpp:368 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 15:01:31.754 [nv_ocsp.cpp:475 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for produced at time: 1793113291
+2026-10-27 15:01:31.754 [nv_ocsp.cpp:489 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113291
+2026-10-27 15:01:31.754 [nv_ocsp.cpp:509 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199691
+2026-10-27 15:02:01.755 [nv_http.cpp:200 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached: Operation timed out after 30001 milliseconds with 0 bytes received (28)
+exit=124 elapsed_ms=150048
+
+===== 15:02:25 11. ClientHello summaries from the packet captures =====
+=== 11-curl-reference.pcap : 1 TCP stream(s) on ports 443/80
+--- stream 1  server 166.117.113.121:443  t+0.000s  bytes client=517 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (2) h2, http/1.1
+  groups             (10) x25519, secp256r1, x448, secp521r1, secp384r1, ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192
+  key_share          (1) x25519
+  sigalgs            (20) ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (31) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA, EMPTY_RENEGOTIATION_INFO_SCSV
+  extensions         (12) server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share, padding
+  server: no data from server; server sent FIN
+  client sent RST
+=== 12-baseline.pcap : 1 TCP stream(s) on ports 443/80
+--- stream 1  server 166.117.113.121:443  t+0.000s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server; server sent RST
+  client sent RST
+=== 22-v2.pcap : 7 TCP stream(s) on ports 443/80
+--- stream 1  server 166.117.200.57:443  t+0.000s  bytes client=2045 server=6073
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: ServerHello version=TLS1.3 cipher=TLS_AES_128_GCM_SHA256 group=x25519; server sent RST; server sent FIN
+--- stream 2  server 166.117.200.57:443  t+0.145s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server
+--- stream 3  server 166.117.200.57:443  t+5.219s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server
+--- stream 4  server 166.117.200.57:443  t+10.420s  bytes client=2045 server=6103
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: ServerHello version=TLS1.3 cipher=TLS_AES_128_GCM_SHA256 group=x25519; server sent RST; server sent FIN
+--- stream 5  server 166.117.113.121:443  t+10.565s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server
+--- stream 6  server 166.117.113.121:443  t+15.557s  bytes client=2038 server=6123
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: ServerHello version=TLS1.3 cipher=TLS_AES_128_GCM_SHA256 group=x25519; server sent FIN
+--- stream 7  server 166.117.56.89:443  t+15.711s  bytes client=2096 server=0
+  sni                rim.attestation.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server; server sent RST
+  client sent RST
+
+===== 15:02:25 12. pack =====
+-rw-rw-r-- 1 ubuntu ubuntu 145948 Oct 27 15:02 /tmp/cap153.tgz
+=== END ===
+[local] 15:02:26 run finished (exit 0), download
+-rw-r--r-- 1 User 197121 145948 Oct 27 16:02 /c/Users/User/AppData/Local/Temp/claude/C--Users-User/d3e1e2d0-7a50-444e-9721-18ee294904f3/scratchpad/cap153/cap153.tgz
+[local] 15:02:30 done

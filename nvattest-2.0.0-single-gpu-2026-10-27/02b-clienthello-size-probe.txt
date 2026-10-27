@@ -1,0 +1,6 @@
+ocsp.ndis.nvidia.com         small hello= 237B -> no answer within 10s
+ocsp.ndis.nvidia.com         large hello=1459B -> ServerHello (or HelloRetryRequest) received in 0.07s
+rim.attestation.nvidia.com   small hello= 243B -> ServerHello (or HelloRetryRequest) received in 0.06s
+rim.attestation.nvidia.com   large hello=1465B -> no answer within 10s
+nras.attestation.nvidia.com  small hello= 244B -> ServerHello (or HelloRetryRequest) received in 0.03s
+nras.attestation.nvidia.com  large hello=1466B -> TLS alert illegal_parameter in 0.03s

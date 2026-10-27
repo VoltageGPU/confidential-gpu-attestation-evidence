@@ -1,0 +1,165 @@
+$ sudo strace -f -tt -s 128 -e trace=network,openat -o 13-baseline-strace.txt nvattest attest --device gpu --verifier local --log-level debug
+2026-10-27 14:55:39.411 [nvat.cpp:139 nvat_sdk_init] [debug] Successfully initialized NVIDIA Attestation SDK v1.2.0
+2026-10-27 14:55:39.420 [attestation.cpp:63 ensure_init] [debug] GPU attestation is enabled
+2026-10-27 14:55:39.421 [attestation.cpp:65 ensure_init] [debug] GPU evidence source not set. Will collect evidence using NVML.
+2026-10-27 14:55:39.422 [attestation.cpp:69 ensure_init] [debug] GPU verifier not set. Creating a LOCAL GPU verifier
+2026-10-27 14:55:39.441 [attestation.cpp:272 attest_device] [debug] Generated nonce for system attestation: ea00b85409b14cb8c0f4101c32fdc0dcf7d458b37c1d3d0ab1f984ef4e9c83ff
+2026-10-27 14:55:39.442 [attestation.cpp:278 attest_device] [info] Attesting GPUs
+2026-10-27 14:55:39.443 [gpu/nvml_client.cpp:191 operator()] [debug] Initializing NVML with dlopen
+2026-10-27 14:55:39.539 [gpu/nvml_client.cpp:221 operator()] [debug] Successfully initialized NVML
+2026-10-27 14:55:39.595 [gpu/nvml_client.cpp:506 collect_evidence_nvml] [debug] Collected evidence for GPU with uuid: GPU-6b5322dc-d3cf-8567-399b-ad211885c870
+2026-10-27 14:55:39.596 [gpu/evidence.cpp:322 create] [debug] GPU attestation report (base64): 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
+2026-10-27 14:55:39.597 [gpu/evidence.cpp:323 create] [debug] GPU attestation cert chain:
+  cert[0]: MIIDfDCCAwKgAwIBAgIUSiXHBKyvq87koPDTunDYKEgIiyMwCgYIKoZIzj0EAwMwZDEbMBkGA1UEBRMSNDE5RTFFMjdFMkFGMTM4NjM0MQswCQYDVQQGEwJVUzEbMBkGA1UECgwSTlZJRElBIENvcnBvcmF0aW9uMRswGQYDVQQDDBJHSDEwMCBBMDEgR1NQIEJST00wIBcNMjAxMDE3MDAwMDAwWhgPOTk5OTEyMzEyMzU5NTlaMHwxMTAvBgNVBAUTKDRBMjVDNzA0QUNBRkFCQ0VFNEEwRjBEM0JBNzBEODI4NDgwODhCMjMxCzAJBgNVBAYTAlVTMRswGQYDVQQKDBJOVklESUEgQ29ycG9yYXRpb24xHTAbBgNVBAMMFEdIMTAwIEEwMSBHU1AgRk1DIExGMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEvyQQys5dRwy8YLbfy5y3m1giQ63lh9y1o2GwNpzAKCdktErGnOxAe8yYfKp5zCyDMpiS5gHZXQZ8K/N88QUQzJuBkDem5Qe6GrSOopFS+eCxFJfmlvhJc8+AU5gCnf1mo4IBWTCCAVUwDgYDVR0PAQH/BAQDAgeAMB0GA1UdDgQWBBQKJccErK+rzuSg8NO6cNgoSAiLIzAfBgNVHSMEGDAWgBSJ6DXuaJxmRj2cAu7rifzTxvTlJDA4BgNVHREEMTAvoC0GCisGAQQBgxyCEgGgHwwdTlZJRElBOkdIMTAwOjQ4QjAyRDAwMjMzMDRCNTUwgcgGBmeBBQUEAQSBvTCBugIBATB2MBAGByqGSM49AgEGBSuBBAAiA2IABE0RbNxI5hKBLs9A1Q0dmA0hMWS2yTPVZSDBYeLkYx3GDa8zUmPtq121J7Raj3m10vkKZdgrz7a9AIlFSoL/L+D3N6HEWPOYpGoGfguKeON9fPp41lfBswWtON9fhjfD2TA9BglghkgBZQMEAgIEMCCc4AxOz4h67OmvnisMyXWiBPa/S/kSXJdgmNhaTswDxl6jQpSnI9wbBp79+5g25DAKBggqhkjOPQQDAwNoADBlAjALp3EaCKWEkA+hGpzUE97WXpqrRU2+/QLMt0C7R8q+FoXyDT61FWUnGLGsRorfvwoCMQCs+PJ1JYLZlJj3nuIScugcPH15HklRAptGVB7iMo67f4Nm6G/YnuC+V5pskfQHJ24=
+  cert[1]: MIICUTCCAdagAwIBAgIJQZ4eJ+KvE4Y0MAoGCCqGSM49BAMDMFMxJzAlBgNVBAMMHk5WSURJQSBHSDEwMCBQcm92aXNpb25lciBJQ0EgMTEbMBkGA1UECgwSTlZJRElBIENvcnBvcmF0aW9uMQswCQYDVQQGEwJVUzAgFw0yMDEwMTcwMDAwMDBaGA85OTk5MTIzMTIzNTk1OVowZDEbMBkGA1UEBRMSNDE5RTFFMjdFMkFGMTM4NjM0MQswCQYDVQQGEwJVUzEbMBkGA1UECgwSTlZJRElBIENvcnBvcmF0aW9uMRswGQYDVQQDDBJHSDEwMCBBMDEgR1NQIEJST00wdjAQBgcqhkjOPQIBBgUrgQQAIgNiAARNEWzcSOYSgS7PQNUNHZgNITFktskz1WUgwWHi5GMdxg2vM1Jj7atdtSe0Wo95tdL5CmXYK8+2vQCJRUqC/y/g9zehxFjzmKRqBn4LinjjfXz6eNZXwbMFrTjfX4Y3w9mjYzBhMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgIEMB0GA1UdDgQWBBSJ6DXuaJxmRj2cAu7rifzTxvTlJDAfBgNVHSMEGDAWgBQpaMsWLNB3lXKieRAD5p66DMwKlDAKBggqhkjOPQQDAwNpADBmAjEA6zIFyw7mBXeM0W8IVLhHmcsmFgldp5+J82kKyefC1ADgXV7x06Y9o1mdMfgb4pSlAjEAywdmxRNvtSlF2X5iJ5Rx4WrU3Dl7F8UYqWUjuY/5hJWgcobmLYcNTMlGVZELGxn2
+  cert[2]: MIICqjCCAi+gAwIBAgIQav5xhPkiMsjfeyQiYXduVjAKBggqhkjOPQQDAzA9MR4wHAYDVQQDDBVOVklESUEgR0gxMDAgSWRlbnRpdHkxGzAZBgNVBAoMEk5WSURJQSBDb3Jwb3JhdGlvbjAgFw0yMjAzMDEwMDAwMDBaGA85OTk5MTIzMTIzNTk1OVowUzEnMCUGA1UEAwweTlZJRElBIEdIMTAwIFByb3Zpc2lvbmVyIElDQSAxMRswGQYDVQQKDBJOVklESUEgQ29ycG9yYXRpb24xCzAJBgNVBAYTAlVTMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEzUdWqjn1OlXhLfFOKAFTghqG+Q3zF4xgSBbZsUEyWYCC3rKjE9Nno88ZpBQx85Oo0PkqP2dwoMVNTQMv5cvy9jLaTvSTXZwN2HQHE9u7x7BIYrWi0sG35q1IJNSOGO5Lo4HbMIHYMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwubmRpcy5udmlkaWEuY29tL2NybC9sMi1naDEwMC5jcmwwNwYIKwYBBQUHAQEEKzApMCcGCCsGAQUFBzABhhtodHRwOi8vb2NzcC5uZGlzLm52aWRpYS5jb20wHQYDVR0OBBYEFCloyxYs0HeVcqJ5EAPmnroMzAqUMB8GA1UdIwQYMBaAFAdCoOsDnIBge6FBYZlNriX3wpseMAoGCCqGSM49BAMDA2kAMGYCMQDK0BCr49DNJ48Yh5wu388bZifDFxAsiUS4U1fGmpJZFhCbODH6mRwcMxp6EOayZuYCMQDYKTyNc2FxWFuhHtdCE3ls4S7SInehdErTZNuhFymc4YOM6VlLWTY/CM+resjjqxQ=
+  cert[3]: MIICijCCAhCgAwIBAgIQTCVe3jvQAb8/SjtgX8qJijAKBggqhkjOPQQDAzA1MSIwIAYDVQQDDBlOVklESUEgRGV2aWNlIElkZW50aXR5IENBMQ8wDQYDVQQKDAZOVklESUEwIBcNMjIwMTEyMDAwMDAwWhgPOTk5OTEyMzEyMzU5NTlaMD0xHjAcBgNVBAMMFU5WSURJQSBHSDEwMCBJZGVudGl0eTEbMBkGA1UECgwSTlZJRElBIENvcnBvcmF0aW9uMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAE+pg+tDUuILlZILk5wg22YEJ9Oh6cyPcsv3IvgRWcV4LeZK1pTCoQDIplZ0E4qsLG3G04pxsbMhxbqkiz9pqlTV2rtuVgSmIqnSYkU1jWXsPS9oVLCGE8VRLl1JvqyOxUo4HaMIHXMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMDsGA1UdHwQ0MDIwMKAuoCyGKmh0dHA6Ly9jcmwubmRpcy5udmlkaWEuY29tL2NybC9sMS1yb290LmNybDA3BggrBgEFBQcBAQQrMCkwJwYIKwYBBQUHMAGGG2h0dHA6Ly9vY3NwLm5kaXMubnZpZGlhLmNvbTAdBgNVHQ4EFgQUB0Kg6wOcgGB7oUFhmU2uJffCmx4wHwYDVR0jBBgwFoAUV4X/g/JjzGV9aLc6W/SNSsv7SV8wCgYIKoZIzj0EAwMDaAAwZQIxAPIQhnveFxYIrPzBqViT2I34SfS4JGWFnk/1UcdmgJmp+7l6rH/C4qxwntYSgeYrlQIwdjQuofHnhd1RL09OBO34566JC9bYAosT/86cCojiGjhLnal9hJOH0nS/lrbaoc5a
+  cert[4]: MIICCzCCAZCgAwIBAgIQLTZwscoQBBHB/sDoKgZbVDAKBggqhkjOPQQDAzA1MSIwIAYDVQQDDBlOVklESUEgRGV2aWNlIElkZW50aXR5IENBMQ8wDQYDVQQKDAZOVklESUEwIBcNMjExMTA1MDAwMDAwWhgPOTk5OTEyMzEyMzU5NTlaMDUxIjAgBgNVBAMMGU5WSURJQSBEZXZpY2UgSWRlbnRpdHkgQ0ExDzANBgNVBAoMBk5WSURJQTB2MBAGByqGSM49AgEGBSuBBAAiA2IABA5MFKM7+KViZljbQSlgfky/RRnEQScW9NDZF8SXgAW96r6u/Ve8ZggtcYpPi2BS4VFu6KfEIrhN6FcHG7WP05W+oM+hxj7nyA1r1jkB2Ry70YfThX3Ba1zOryOP+MJ9vaNjMGEwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFFeF/4PyY8xlfWi3Olv0jUrL+0lfMB8GA1UdIwQYMBaAFFeF/4PyY8xlfWi3Olv0jUrL+0lfMAoGCCqGSM49BAMDA2kAMGYCMQCPeFM3TASsKQVaT+8S0sO9u97PVGCpE9d/I42IT7k3UUOLSR/qvJynVOD1vQKVXf0CMQC+EY55WYoDBvs2wPAH1Gw4LbcwUN8QCff8bFmV4ZxjCRr4WXTLFHBKjbfneGSBWwA=
+2026-10-27 14:55:39.613 [gpu/spdm/gpu_opaque_data_parser.cpp:221 create] [debug] GPU opaque data version: 1
+2026-10-27 14:55:39.614 [gpu/verify.cpp:69 generate_claims_v3] [debug] Generating GPU evidence claims for GPU index GPU-6b5322dc-d3cf-8567-399b-ad211885c870
+2026-10-27 14:55:39.615 [gpu/evidence.cpp:218 generate_gpu_evidence_claims] [debug] Generating GPU evidence claims
+2026-10-27 14:55:39.616 [gpu/spdm/gpu_opaque_data_parser.cpp:278 get_field] [debug] GpuOpaqueDataParser::get_field: Field not found: OPAQUE_FIELD_ID_SWITCH_PDI
+2026-10-27 14:55:39.617 [gpu/evidence.cpp:281 generate_attestation_report_claims] [debug] FWID found in attestation report 209ce00c4ecf887aece9af9e2b0cc975a204f6bf4bf9125c976098d85a4ecc03c65ea34294a723dc1b069efdfb9836e4
+2026-10-27 14:55:39.631 [nv_x509.cpp:466 generate_ocsp_claims] [debug] Generating OCSP claims
+2026-10-27 14:55:39.632 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx3. Subject: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation, Issuer: CN = NVIDIA Device Identity CA, O = NVIDIA
+2026-10-27 14:55:44.651 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:55:49.705 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:55:54.790 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:55:55.259 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:55:55.271 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:55:55.273 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:55:55.274 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793112955
+2026-10-27 14:55:55.275 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:55:55.277 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199355
+2026-10-27 14:55:55.278 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation, Issuer: CN = NVIDIA Device Identity CA, O = NVIDIA is: good
+2026-10-27 14:55:55.280 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:55:55.281 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx2. Subject: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation
+2026-10-27 14:55:55.606 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:55:55.606 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [0]: Subject: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation, Issuer: CN = NVIDIA Device Identity CA, O = NVIDIA
+2026-10-27 14:55:55.622 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:55:55.624 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:55:55.625 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793112955
+2026-10-27 14:55:55.626 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:55:55.627 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199355
+2026-10-27 14:55:55.627 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation is: good
+2026-10-27 14:55:55.628 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:55:55.628 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx1. Subject: serialNumber = 419E1E27E2AF138634, C = US, O = NVIDIA Corporation, CN = GH100 A01 GSP BROM, Issuer: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US
+2026-10-27 14:56:00.644 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:05.744 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:05.998 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:56:05.999 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [0]: Subject: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation
+2026-10-27 14:56:05.999 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [1]: Subject: CN = NVIDIA GH100 Identity, O = NVIDIA Corporation, Issuer: CN = NVIDIA Device Identity CA, O = NVIDIA
+2026-10-27 14:56:06.021 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:56:06.022 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:56:06.023 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793112965
+2026-10-27 14:56:06.024 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:56:06.025 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199365
+2026-10-27 14:56:06.026 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: serialNumber = 419E1E27E2AF138634, C = US, O = NVIDIA Corporation, CN = GH100 A01 GSP BROM, Issuer: CN = NVIDIA GH100 Provisioner ICA 1, O = NVIDIA Corporation, C = US is: good
+2026-10-27 14:56:06.027 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:56:06.027 [gpu/verify.cpp:90 generate_claims_v3] [debug] GPU Driver RIM ID: NV_GPU_DRIVER_GH100_595.71.05
+2026-10-27 14:56:06.028 [rim.cpp:477 get_rim] [debug] Getting RIM from URL: https://rim.attestation.nvidia.com/v1/rim/NV_GPU_DRIVER_GH100_595.71.05
+2026-10-27 14:56:11.041 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:11.216 [rim.cpp:508 get_rim] [debug] RIM response: NV_GPU_DRIVER_GH100_595.71.05 92c0e7df-cb92-4d7c-85a5-c55b84815c23 143005c060a5eb2866f7db046c234d27f87ae386cab20ab40d9daa706be46ea4 
+2026-10-27 14:56:11.220 [gpu/verify.cpp:172 set_driver_rim_claims] [debug] Generating driver RIM claims
+2026-10-27 14:56:11.239 [nv_x509.cpp:466 generate_ocsp_claims] [debug] Generating OCSP claims
+2026-10-27 14:56:11.241 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx2. Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA
+2026-10-27 14:56:11.534 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:56:11.545 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:56:11.547 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:56:11.548 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793112971
+2026-10-27 14:56:11.550 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:56:11.551 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199371
+2026-10-27 14:56:11.552 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA is: good
+2026-10-27 14:56:11.554 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:56:11.555 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx1. Subject: C = US, O = NVIDIA, CN = NVIDIA Reference Value L3 GH100 003, Issuer: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US
+2026-10-27 14:56:16.571 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:21.652 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:22.021 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:56:22.022 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [0]: Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA
+2026-10-27 14:56:22.037 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:56:22.039 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:56:22.040 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793112981
+2026-10-27 14:56:22.041 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:56:22.042 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199381
+2026-10-27 14:56:22.043 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: C = US, O = NVIDIA, CN = NVIDIA Reference Value L3 GH100 003, Issuer: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US is: good
+2026-10-27 14:56:22.043 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:56:22.044 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx0. Subject: C = US, ST = CA, L = Santa Clara, O = NVIDIA Corporation, CN = HCC RIM L4 Signer, Issuer: C = US, O = NVIDIA, CN = NVIDIA Reference Value L3 GH100 003
+2026-10-27 14:56:27.058 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:27.325 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:56:27.326 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [0]: Subject: C = US, O = NVIDIA, CN = NVIDIA Reference Value L3 GH100 003, Issuer: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US
+2026-10-27 14:56:27.326 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [1]: Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA
+2026-10-27 14:56:27.347 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:56:27.349 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:56:27.350 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793112987
+2026-10-27 14:56:27.352 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:56:27.353 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199387
+2026-10-27 14:56:27.355 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: C = US, ST = CA, L = Santa Clara, O = NVIDIA Corporation, CN = HCC RIM L4 Signer, Issuer: C = US, O = NVIDIA, CN = NVIDIA Reference Value L3 GH100 003 is: good
+2026-10-27 14:56:27.356 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:56:27.358 [rim.cpp:271 generate_rim_claims] [debug] Verifying RIM signature
+2026-10-27 14:56:27.377 [rim.cpp:477 get_rim] [debug] Getting RIM from URL: https://rim.attestation.nvidia.com/v1/rim/NV_GPU_VBIOS_G520_0200_885_9600CF0001
+2026-10-27 14:56:27.685 [rim.cpp:508 get_rim] [debug] RIM response: NV_GPU_VBIOS_G520_0200_885_9600CF0001 8f1705e2-37eb-4679-96f1-126169d2f9fa 509cc93b64950f833398a2aacdae1c4b3804e922d71ab4cdf82089f88c49e557 
+2026-10-27 14:56:27.687 [gpu/verify.cpp:198 set_vbios_rim_claims] [debug] Generating VBIOS RIM claims
+2026-10-27 14:56:27.708 [nv_x509.cpp:466 generate_ocsp_claims] [debug] Generating OCSP claims
+2026-10-27 14:56:27.709 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx2. Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA
+2026-10-27 14:56:32.730 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:37.798 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:42.852 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:43.291 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:56:43.303 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:56:43.304 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:56:43.306 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113003
+2026-10-27 14:56:43.307 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:56:43.309 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199403
+2026-10-27 14:56:43.310 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA is: good
+2026-10-27 14:56:43.312 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:56:43.313 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx1. Subject: CN = NVIDIA Reference Value L3 GH100 002, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US
+2026-10-27 14:56:43.645 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:56:43.645 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [0]: Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA
+2026-10-27 14:56:43.662 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:56:43.663 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:56:43.665 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113003
+2026-10-27 14:56:43.666 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:56:43.666 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199403
+2026-10-27 14:56:43.667 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: CN = NVIDIA Reference Value L3 GH100 002, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US is: good
+2026-10-27 14:56:43.669 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:56:43.670 [nv_x509.cpp:493 generate_ocsp_claims] [debug] Processing cert: subject_idx0. Subject: C = US, ST = CA, L = Santa Clara, O = NVIDIA Corporation, CN = HCC RIM L4 Signer, Issuer: CN = NVIDIA Reference Value L3 GH100 002, O = NVIDIA Corporation, C = US
+2026-10-27 14:56:48.691 [nv_http.cpp:139 do_request_as_string] [debug] Retryable libcurl error code: Timeout was reached (28)
+2026-10-27 14:56:48.918 [nv_ocsp.cpp:58 get_ocsp_response_from_raw] [debug] OCSP request successful
+2026-10-27 14:56:48.919 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [0]: Subject: CN = NVIDIA Reference Value L3 GH100 002, O = NVIDIA Corporation, C = US, Issuer: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US
+2026-10-27 14:56:48.919 [nv_ocsp.cpp:232 validate_ocsp_response] [debug]   Intermediate Cert [1]: Subject: CN = NVIDIA Reference Value GH100 CA, O = NVIDIA Corporation, C = US, Issuer: C = US, O = NVIDIA, CN = NVIDIA CoRIM signing Root CA
+2026-10-27 14:56:48.942 [nv_ocsp.cpp:267 validate_ocsp_response] [debug] OCSP basic verification successful
+2026-10-27 14:56:48.943 [nv_ocsp.cpp:204 get_ocsp_response] [debug] OCSP_check_nonce returned: 1
+2026-10-27 14:56:48.944 [nv_ocsp.cpp:302 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for this update time: 1793113008
+2026-10-27 14:56:48.946 [nv_ocsp.cpp:305 get_ocsp_status] [debug] Generating expiration time claim
+2026-10-27 14:56:48.947 [nv_ocsp.cpp:318 get_ocsp_status] [debug] ASN1_TIME_to_tm successful for next update time: 1793199408
+2026-10-27 14:56:48.949 [nv_x509.cpp:525 generate_ocsp_claims] [debug] OCSP status for cert: Subject: C = US, ST = CA, L = Santa Clara, O = NVIDIA Corporation, CN = HCC RIM L4 Signer, Issuer: CN = NVIDIA Reference Value L3 GH100 002, O = NVIDIA Corporation, C = US is: good
+2026-10-27 14:56:48.951 [nv_x509.cpp:554 generate_ocsp_claims] [debug] Generating expiration time claim
+2026-10-27 14:56:48.952 [rim.cpp:271 generate_rim_claims] [debug] Verifying RIM signature
+2026-10-27 14:56:48.969 [rim.cpp:392 get_measurements] [debug] Extracted 22 total measurements
+2026-10-27 14:56:48.970 [rim.cpp:392 get_measurements] [debug] Extracted 12 total measurements
+2026-10-27 14:56:48.971 [gpu/verify.cpp:278 generate_set_measurement_claims] [debug] NVDEC0 disabled (status: 0x55), skipping MSR 35 validation
+2026-10-27 14:56:48.972 [gpu/verify.cpp:332 generate_set_measurement_claims] [debug] Comparing golden driver measurements against runtime measurements
+2026-10-27 14:56:48.973 [gpu/verify.cpp:338 generate_set_measurement_claims] [debug] Skipping measurement index 35 due to NVDEC0 disabled status
+2026-10-27 14:56:48.974 [gpu/verify.cpp:351 generate_set_measurement_claims] [debug] Comparing golden vbios measurements against runtime measurements
+2026-10-27 14:56:48.980 [gpu/nvml_client.cpp:235 shutdown_nvml] [debug] Shutting down NVML
+2026-10-27 14:56:49.015 [gpu/nvml_client.cpp:247 shutdown_nvml] [debug] Successfully shut down NVML
+Devices: 
+- Device 0:
+    Device Type: gpu
+    Hardware Model: GH100 A01 GSP BROM
+    UEID: 423307781548878997731375975535240053908442745635
+    VBIOS Version: 96.00.CF.00.01
+    Driver Version: 595.71.05
+    Measurement Result: success
+    Attestation Report Cert Chain:
+        Status: valid, OCSP: good
+        Expires: 9999-12-31T23:59:59Z
+    Driver RIM Cert Chain:
+        Status: valid, OCSP: good
+        Expires: 2028-04-23T05:42:57Z
+    VBIOS RIM Cert Chain:
+        Status: valid, OCSP: good
+        Expires: 2027-02-02T19:00:50Z
+
+GPU attestation was successful
+exit=0

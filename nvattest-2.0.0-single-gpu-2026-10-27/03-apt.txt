@@ -1,0 +1,21 @@
+(Reading database ... 116603 files and directories currently installed.)
+Preparing to unpack /tmp/cuda-keyring.deb ...
+Unpacking cuda-keyring (1.1-1) over (1.1-1) ...
+Setting up cuda-keyring (1.1-1) ...
+--- available versions
+  nvattest | 2.0.0.1790976895-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.2.2.1780962352-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.2.1.1777487608-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.2.0.1772475102-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.1.1.1770245582-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.1.0.1770093675-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.0.0.1768244834-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+  nvattest | 1.0.0.1765816912-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 2.0.0.1790976895-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.2.2.1780962352-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.2.1.1777487608-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.2.0.1772475102-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.1.1.1770245582-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.1.0.1770093675-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.0.0.1768244834-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages
+   libnvat | 1.0.0.1765816912-1 | https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages

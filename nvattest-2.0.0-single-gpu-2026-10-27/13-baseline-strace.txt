@@ -1,0 +1,973 @@
+2457  14:55:39.328043 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.330881 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/libnvat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2457  14:55:39.331511 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnvat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2457  14:55:39.332141 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnvat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2457  14:55:39.332634 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnvat.so.1", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.335177 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.337535 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.339632 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.341848 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.345761 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libxml2.so.2", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.349506 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.352683 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.355580 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.358102 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.360628 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.363193 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicuuc.so.74", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.366063 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.368361 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicudata.so.74", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.407932 openat(AT_FDCWD, "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/openssl.cnf", O_RDONLY) = -1 ENOENT (No such file or directory)
+2457  14:55:39.413317 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.444791 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.447404 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnvidia-ml.so.1", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.453343 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.454718 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcuda.so.1", O_RDONLY|O_CLOEXEC) = 3
+2457  14:55:39.463633 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4
+2457  14:55:39.464869 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4
+2457  14:55:39.466852 openat(AT_FDCWD, "/proc/sys/vm/mmap_min_addr", O_RDONLY) = 4
+2457  14:55:39.468201 openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY) = 4
+2457  14:55:39.470053 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 4
+2457  14:55:39.475311 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4
+2457  14:55:39.477348 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4
+2457  14:55:39.478764 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4
+2457  14:55:39.481053 openat(AT_FDCWD, "/proc/sys/vm/mmap_min_addr", O_RDONLY) = 4
+2457  14:55:39.482753 openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY) = 4
+2457  14:55:39.484852 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 4
+2457  14:55:39.510316 openat(AT_FDCWD, "/proc/self/task/2458/comm", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 9
+2457  14:55:39.512167 openat(AT_FDCWD, "/proc/driver/nvidia/params", O_RDONLY) = 9
+2457  14:55:39.514620 openat(AT_FDCWD, "/dev/nvidiactl", O_RDWR) = 9
+2457  14:55:39.515348 openat(AT_FDCWD, "/sys/devices/system/memory/block_size_bytes", O_RDONLY) = 10
+2457  14:55:39.517864 openat(AT_FDCWD, "/proc/driver/nvidia/params", O_RDONLY) = 10
+2457  14:55:39.519707 openat(AT_FDCWD, "/dev/nvidia0", O_RDWR|O_NONBLOCK|O_CLOEXEC) = 10
+2457  14:55:39.520944 openat(AT_FDCWD, "/proc/devices", O_RDONLY) = 11
+2457  14:55:39.522011 openat(AT_FDCWD, "/proc/driver/nvidia/capabilities/mig/config", O_RDONLY) = 11
+2457  14:55:39.523154 openat(AT_FDCWD, "/proc/driver/nvidia/capabilities/mig/config", O_RDONLY) = 11
+2457  14:55:39.525391 openat(AT_FDCWD, "/dev/nvidia-caps/nvidia-cap1", O_RDONLY|O_CLOEXEC) = 11
+2457  14:55:39.526202 openat(AT_FDCWD, "/proc/devices", O_RDONLY) = 11
+2457  14:55:39.527232 openat(AT_FDCWD, "/proc/driver/nvidia/capabilities/mig/monitor", O_RDONLY) = 11
+2457  14:55:39.528409 openat(AT_FDCWD, "/proc/driver/nvidia/capabilities/mig/monitor", O_RDONLY) = 11
+2457  14:55:39.530646 openat(AT_FDCWD, "/dev/nvidia-caps/nvidia-cap2", O_RDONLY|O_CLOEXEC) = 11
+2457  14:55:39.531405 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 11
+2457  14:55:39.532100 openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 11
+2457  14:55:39.533246 openat(AT_FDCWD, "/sys/devices/system/node", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 11
+2457  14:55:39.533880 openat(AT_FDCWD, "/sys/devices/system/node/node0/cpumap", O_RDONLY) = 14
+2457  14:55:39.535813 openat(AT_FDCWD, "/proc/devices", O_RDONLY) = 11
+2457  14:55:39.538280 openat(AT_FDCWD, "/dev/nvidia-uvm", O_RDWR|O_CLOEXEC) = 11
+2457  14:55:39.538479 openat(AT_FDCWD, "/dev/nvidia-uvm", O_RDWR|O_CLOEXEC) = 14
+2457  14:55:39.541865 openat(AT_FDCWD, "/proc/driver/nvidia/params", O_RDONLY) = 15
+2457  14:55:39.543438 openat(AT_FDCWD, "/dev/nvidia0", O_RDWR|O_CLOEXEC) = 15
+2457  14:55:39.551004 openat(AT_FDCWD, "/proc/driver/nvidia/params", O_RDONLY) = 16
+2457  14:55:39.553092 openat(AT_FDCWD, "/dev/nvidia0", O_RDWR|O_CLOEXEC) = 16
+2457  14:55:39.638430 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:55:39.642683 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:55:39.643588 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2459  14:55:39.648933 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 21
+2459  14:55:39.649518 connect(21, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+2459  14:55:39.652123 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 21
+2459  14:55:39.652658 connect(21, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+2459  14:55:39.654087 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 21
+2459  14:55:39.656719 openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 21
+2459  14:55:39.659620 openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 21
+2459  14:55:39.662085 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2459  14:55:39.667298 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2459  14:55:39.667864 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2459  14:55:39.668422 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2459  14:55:39.669616 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\3730\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\335:\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2459  14:55:39.671925 recvfrom(21, "\3730\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0\224\0\4\246uqy\300\f\0\1\0\1\0\0\0\224\0\4\246u\3109\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2459  14:55:39.678842 recvfrom(21, "\335:\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\355\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2459  14:55:39.681414 openat(AT_FDCWD, "/etc/gai.conf", O_RDONLY|O_CLOEXEC) = 21
+2459  14:55:39.684079 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2459  14:55:39.684589 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2459  14:55:39.685146 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2459  14:55:39.685627 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112939, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2459  14:55:39.699432 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112939, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112939, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2459  14:55:39.700283 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112939, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112939, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2459  14:55:39.701096 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112939, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2459  14:55:39.701850 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2459  14:55:39.702172 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2459  14:55:39.702453 getsockname(21, {sa_family=AF_INET, sin_port=htons(34092), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2459  14:55:39.702705 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2459  14:55:39.703065 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2459  14:55:39.703371 getsockname(21, {sa_family=AF_INET, sin_port=htons(38042), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2459  14:55:39.703881 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2459  14:55:39.705074 +++ exited with 0 +++
+2457  14:55:39.705709 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:55:39.706056 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:55:39.706710 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:55:39.712772 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:55:39.713250 getsockname(19, {sa_family=AF_INET, sin_port=htons(32914), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:39.713609 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:39.714061 getsockname(19, {sa_family=AF_INET, sin_port=htons(32914), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:39.733188 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\365\224\322\332x\357\267\1\5vN \337)\357hi{\27\310 \30\3\315\377$Cm\321\205\273\206 \207dEI\315\330E~l\364N?\227s\246F\344Cm\312(\335R*\0216\t\17\322\373Q\22\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:55:39.734511 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:39.735179 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:55:39.898123 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:39.910262 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:40.918448 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:41.927138 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:42.178126 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:43.186562 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:44.195379 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:44.647127 recvfrom(19, 0x5e630afd3aa3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:44.697839 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:55:44.699530 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:55:44.704109 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:55:44.714649 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:55:44.716210 getsockname(19, {sa_family=AF_INET, sin_port=htons(60494), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:44.718086 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:44.719827 getsockname(19, {sa_family=AF_INET, sin_port=htons(60494), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:44.736209 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\356oa5\376\347:D\375\224\260\347\337t\202\276\256\217T&\341\206\n\274\30796_B\t\t\271 \337`^\254\274\357\374\376;\340\200'\261v\223\306\350\253\25\5\307\275\200\5\267\226\331p\324\220c\230\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:55:44.737791 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:44.901888 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:45.909453 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:46.916902 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:47.202915 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:48.212179 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:49.220685 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:49.702263 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:49.782741 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:55:49.783925 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:55:49.787569 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:55:49.797251 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:55:49.798837 getsockname(19, {sa_family=AF_INET, sin_port=htons(60504), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:49.800454 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:49.801763 getsockname(19, {sa_family=AF_INET, sin_port=htons(60504), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:49.813657 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\267\272[\200\0210\224V\356G1\206c\350\227\307\312Ri\2002\325\335\267\3023BC\311\354\31l \335\241\265\266\2409\364\270\340\24\247\301\v\337\354\237\327DZR\211\344u\357\276\10\\p\367?j\21\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:55:49.814589 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:49.986356 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:50.994602 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:52.002219 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:52.288159 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:53.295538 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:54.304880 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:54.786910 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.068683 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:55:55.070279 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:55:55.073264 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:55:55.084318 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:55:55.085722 getsockname(19, {sa_family=AF_INET, sin_port=htons(54650), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.087221 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:55.088604 getsockname(19, {sa_family=AF_INET, sin_port=htons(54650), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.105684 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3D\320\307\v\24\364Q\0002\255K\361+GS*\317\261\363\221\202]i\257\213J@\30\227\252\226( \202\343\7\265\31;\320y*\335\362!\315\324\24\312H\247\r\371\26\377E{X\237\4T\276\27\303\201\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:55:55.107498 recvfrom(19, 0x5e630b0a95c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.140550 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:55:55.142238 recvfrom(19, "\2\0\0v\3\3e\355\220\371n\231q*}Z\342\34S\370\345hK\f\357\336\326\34\3079\303C\242\4\"\323\27\1 \202\343\7\265\31;\320y*\335\362!\315\324\24\312H\247\r\371\26\377E{X\237\4T\276\27\303\201\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \350\320F\234\331\267dt\243\7\323<\206\265\10\21\253K\260!\356\256\371\244b\21\330\27\350do,", 122, 0, NULL, NULL) = 122
+2457  14:55:55.145682 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:55:55.147490 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:55:55.149170 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:55:55.151193 recvfrom(19, "%\277c(\326\306\0167\222\206\305h\265z\360\363\355\342\1C\7\220\t\267\33+\251\347\301\222Z\355%\26\0e\317\30\232\35\234\276", 42, 0, NULL, NULL) = 42
+2457  14:55:55.153140 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:55:55.154637 recvfrom(19, "\275\266\221\375\2432<v\4U\334m\20*`\230}\272T\231\242|^\236&1q\364\372U\20\361q\210\4\362\276\22\267J\0#\344B\201\304\326\355[\4\1CG+\2048\372\34\202]`%\376.\276Q\312\f\25\300H\1A\265\2634\242\275j\312\223\271\16\311VFN'%\1770q\277\324\247\323zm\377\356q\212aKL\373\327\21\334\334\250\235\240\242\25\236\302\245\233\264F\371\34\205\344W\274u"..., 3886, 0, NULL, NULL) = 3886
+2457  14:55:55.158906 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:55:55.161167 recvfrom(19, "\3766\30\30\2s\361\351V\30\221\200'\30\227f\23Z\315\202\342\252~b\206\322!0\220\277HA\352\36Ip\205-\241`Q\34t\376\24\212\316\10F]\217>s\367_\212\356\17\363\360k\235\225\354\212\277\260\\\277\0261\374\255\244^\37\177\373ED~\235\237\22\262\377Aa\303\246h.\231\306\360\323z\312@&\243\34\31\344\301\214J!e\323\251\321\340\260\252x\10\31\331\35\355a9\345\32\300\377\365"..., 281, 0, NULL, NULL) = 281
+2457  14:55:55.163610 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:55:55.165209 recvfrom(19, "\217\317\367\303\0\367\214\7\376\363\224<@\222j\3402Q\222u)U\201u\3\371\245\31Rf\177`R\200\224oL\362\372\25<~\355\376\10\337\214L\322\374\351[P", 53, 0, NULL, NULL) = 53
+2457  14:55:55.167230 sendto(19, "\24\3\3\0\1\1\27\3\3\0005\202\201\177\246\370\n5/\225\354\23\277\230\35<y\346\307\211r`;\337\321&\310W\37\227\256y\276|\302tt4\233\235\371\362\227\203AWx+\312\20Xa\224\337", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:55:55.169269 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:55.171254 getsockname(19, {sa_family=AF_INET, sin_port=htons(54650), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.172812 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:55.174426 getsockname(19, {sa_family=AF_INET, sin_port=htons(54650), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.177247 sendto(19, "\27\3\3\1>\327sGX\277m|\320\361\244\306\277\200\227\321-\242fo\232\241H1\234\361\365B\276\276\17\233P\27\256\210\216\r\330vk\217\177\343\233\342\330\245\3704\355\377_\233MF\226k\35,\234\33\6a\201I\366\365\375\341\3572\333Z\213\204\252\375l\240\336g\312\244\24\352\350\373\0027\253\257\321!9\214\220\365\273\277s\303\36\305(\32^\244\254@\331\322+\r\6\216\216\333\312\375\340\5\367\315"..., 323, MSG_NOSIGNAL, NULL, 0) = 323
+2457  14:55:55.202123 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:55:55.203417 recvfrom(19, "\276\276\341\224\351\22\205\344.l\0\325\302;\27\t\333S=\232+\334]\236\16\10\5\211\26Zf\352\316\35X\234X\327\20\\\372@N\201\367*\r\246Xb\212\255k\216ou2e\216s\304\247<\224#q\310\305\257O?\327\6\310\222\306\233\301e\334\363\260\272\323\203\246\313}G^\22\310+wN\20\333'&\322\202-\310\260\360\250\309\366!\243\315\362\nE/\354\247*&o\345\344\325\307\302m\275"..., 174, 0, NULL, NULL) = 174
+2457  14:55:55.205395 recvfrom(19, 0x5e630afc7ea3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.235181 recvfrom(19, "\27\3\3\5\211", 5, 0, NULL, NULL) = 5
+2457  14:55:55.236477 recvfrom(19, "V\25`l)\244_\343N\351z\307\213S\215aK@\300#\323\0204\201>r\345\306\272\301\210e\344\332\333\310w\275\310\332q\366\7U$\347N7\337\213Y\v\333\374\232\f]\v\267\331|\260\317e\377\265\267\253\311\204\0\321\364'\217U=\354\\\7\35\231\373\204O\263\340\vz\200>\3}\210\317[\202\325C\335>\361\331\16\226y\252\250\316_\267\323B?\263\236[6\355\303Ma\263i`4%\33"..., 1417, 0, NULL, NULL) = 1417
+2457  14:55:55.239571 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:55:55.241525 recvfrom(19, "\357`\275\217\375:7\1$p\302N\275\236\252,\336\231\355\22L\204", 22, 0, NULL, NULL) = 22
+2457  14:55:55.248119 recvfrom(19, 0x5e630afc7ea3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.249574 sendto(19, "\27\3\3\0\23R\350\271\227y\312\247\240\27\341/\314\244Gy\243\255\340H", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:55:55.284593 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:55:55.295472 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:55:55.297415 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2462  14:55:55.303889 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2462  14:55:55.309937 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2462  14:55:55.310797 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2462  14:55:55.311558 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2462  14:55:55.312852 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\312\343\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="G\352\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2462  14:55:55.317195 recvfrom(21, "\312\343\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0\204\0\4\246uqy\300\f\0\1\0\1\0\0\0\204\0\4\246u\3109\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2462  14:55:55.321131 recvfrom(21, "G\352\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\361\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2462  14:55:55.323113 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2462  14:55:55.323504 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2462  14:55:55.323803 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2462  14:55:55.324243 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112955, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2462  14:55:55.324763 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2462  14:55:55.325390 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2462  14:55:55.325727 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2462  14:55:55.326453 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2462  14:55:55.326711 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2462  14:55:55.327120 getsockname(21, {sa_family=AF_INET, sin_port=htons(33932), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2462  14:55:55.327374 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2462  14:55:55.327621 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2462  14:55:55.327875 getsockname(21, {sa_family=AF_INET, sin_port=htons(55649), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2462  14:55:55.328441 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2462  14:55:55.329635 +++ exited with 0 +++
+2457  14:55:55.330461 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:55:55.330737 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:55:55.331566 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:55:55.337084 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:55:55.337350 getsockname(19, {sa_family=AF_INET, sin_port=htons(54662), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.337599 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:55.337848 getsockname(19, {sa_family=AF_INET, sin_port=htons(54662), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.344747 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3|\305c\213\365A \23Dj]\31\372{G\224,a\261\240{\247U\355\3d!\271*\325)\17 \240gD\210[\272\205rC\245\370I\242f5d\272\343\336\366/\r\313~ \245\324y\324\257\261M\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:55:55.345570 recvfrom(19, 0x5e630b0758c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.346915 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:55:55.497224 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:55:55.498156 recvfrom(19, "\2\0\0v\3\3Uo\224\25\254O\335\275\f\325l6I\"\335-\306\216\203\256\314<\375\212\3227\"\335\361-\204\204 \240gD\210[\272\205rC\245\370I\242f5d\272\343\336\366/\r\313~ \245\324y\324\257\261M\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \211|\214\330\222\336\34A&\363\324\37\2\35\34\255E\276\330\207\374:\333\245\v3\363R\"\315\331L", 122, 0, NULL, NULL) = 122
+2457  14:55:55.500259 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:55:55.502150 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:55:55.503865 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:55:55.505165 recvfrom(19, "\366\207_\2421j3\216\364I\204u\243\26\362\230\fN\27\327A2w\365\346>\t\353\354(\211?\217\345q\336\341K\23\254\2\23", 42, 0, NULL, NULL) = 42
+2457  14:55:55.506577 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:55:55.508505 recvfrom(19, "\340\366\304=\212\35m\n\214\363\33M\252V\312\257\0206BE\177\32\215{\224\332\364W\\tK\311\r\225D\4\226\301\302\23\260\226>\374\3775\271\5,\357\325\330\230\v\244\332o!.\340\220\334\260\26\n\255\343\\\16\246Un\243\360\336\3\372\255\206\300\306M\254\357\227\232\"\236d\352\2441I\362\"\247P\262\220%\350\210\312\20=2r\266\34k\306x\341C\210\241\201U\2\3335\216\347\306\321\355X\370"..., 3886, 0, NULL, NULL) = 3886
+2457  14:55:55.512207 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:55:55.513150 recvfrom(19, "{\326\215\204}\276\230\203\20#\243\212\36\0\336=N,\20\344\214\\9\2\221e\261\357M\304\354\323E\351G\261\27\267b\323`St\300e\37u\fE\222\271\31\31\223\244\24\337uy\240v\261\271Hk1\214\211\5\35<\26\367\302 l\225M\1\332\344\315Q\271\253\322p\\\327\242\305\335]\335\311\213\266\205T\275C7\t\357\240*\251\217i\224\277\360\324\310\2024\247\244K$\251\236\313\212hP\245\267"..., 281, 0, NULL, NULL) = 281
+2457  14:55:55.514272 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:55:55.515138 recvfrom(19, "A\312\4>\270\314N\22\205\330|\310\220\310\367\27\226wV\261\342\275\177\26X^\2524\310\250\233\337\342\246\236\2269wcrN\346\2706\2078\5\267\317K\177\355^", 53, 0, NULL, NULL) = 53
+2457  14:55:55.516217 sendto(19, "\24\3\3\0\1\1\27\3\3\0005[\236\17\260\350%\353\243\177a\33\362L\304.\344\363\342\273\177'\355fy\336\276\261\234[p\342\251\217\264\206\346\10\252\"R\242\223\376\352\352\203\270\246\6\2778\336\351", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:55:55.517190 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:55.517777 getsockname(19, {sa_family=AF_INET, sin_port=htons(54662), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.518382 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:55:55.518842 getsockname(19, {sa_family=AF_INET, sin_port=htons(54662), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.520469 sendto(19, "\27\3\3\1>V\317 Z\0\204\274$\205\340\327]\227\247\21\352\10M8\240\321\352/6X>\270r\245U\260\260\371\234\367lN\244/\".\31g\367\210\3r\377\356\307|%\262\21A\267M\312%\233\234&%\377\30\22\2611\332\267\236-\341\355\314\323\32\360\233;3\337\n]-\78\23u\302\256\201\267\256\234\247a,?\365|\261\313_\351\306?\247|\345\236\21(\275\223\24\376\10\4\2468\10\364"..., 323, MSG_NOSIGNAL, NULL, 0) = 323
+2457  14:55:55.550168 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:55:55.551795 recvfrom(19, "\263\354\332\225\262)K\223\310\2101\312\202\233\220\223is,\343\204\367\337L\252\266\354<\363\346\212B\346\227\223\25\363s\n\334$\21\235!\35G,v\261\233Y\340\348\360\3150A~\305-\203y\222\21M<0\313\244j\4i\"H\372CnuRS\10\342J\305qj\271\5\375`\210YO\3244,\272\250W\36\177\332\304I\353py\2704\331\256J\211\304\211r\17\272\320U\3\204\216\37a\303\273"..., 174, 0, NULL, NULL) = 174
+2457  14:55:55.553587 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.583528 recvfrom(19, "\27\3\3\5\250", 5, 0, NULL, NULL) = 5
+2457  14:55:55.584494 recvfrom(19, "*goYHv5\227\f#H\360p\326\22e\265\233\0353\236\0\333[\263\262~~*\177^\330\355\3349\266\206\223\202C\340m\234G(\371\276\325\240595\25\203\337pK\345&#\203\30\3420\206\37+\314*-\231\177\370\2005\253\244T#'\270\276G\\\26\271\367\343\243\236\352\t\0015\241M7\275\214x\202r\33\223\2753\352\366\260\261\317q2\24\177X\304\260\204\216/@\366 \t&_\370"..., 1448, 0, NULL, NULL) = 1448
+2457  14:55:55.587160 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:55:55.588709 recvfrom(19, "rV\34\3320\351\261\374\305;p\266:\233^2\371\277\212&O\345", 22, 0, NULL, NULL) = 22
+2457  14:55:55.596768 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.598255 sendto(19, "\27\3\3\0\23\271N\265\37K\37}\2043\333\16d\335\341\254['\243Q", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:55:55.630316 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:55:55.635229 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:55:55.636266 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2463  14:55:55.640041 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2463  14:55:55.642696 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2463  14:55:55.643335 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2463  14:55:55.643773 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2463  14:55:55.644875 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\371.\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="6+\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2463  14:55:55.648659 recvfrom(21, "\371.\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0\204\0\4\246u\3109\300\f\0\1\0\1\0\0\0\204\0\4\246uqy\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2463  14:55:55.654502 recvfrom(21, "6+\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\361\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2463  14:55:55.657275 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2463  14:55:55.657713 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2463  14:55:55.658426 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2463  14:55:55.658785 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112955, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2463  14:55:55.659526 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2463  14:55:55.659938 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2463  14:55:55.660453 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112955, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2463  14:55:55.661119 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2463  14:55:55.661377 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2463  14:55:55.661633 getsockname(21, {sa_family=AF_INET, sin_port=htons(51937), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2463  14:55:55.661877 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2463  14:55:55.662396 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2463  14:55:55.662639 getsockname(21, {sa_family=AF_INET, sin_port=htons(52462), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2463  14:55:55.663215 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2463  14:55:55.664405 +++ exited with 0 +++
+2457  14:55:55.665431 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:55:55.665703 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:55:55.666547 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:55:55.672236 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:55:55.672495 getsockname(19, {sa_family=AF_INET, sin_port=htons(57570), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.672747 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:55:55.673151 getsockname(19, {sa_family=AF_INET, sin_port=htons(57570), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:55:55.683098 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3kf\277\320C0e\226s\220~\334\255\313\3430\3c\376ZV\t\35\34\277\237\275\2268+JH +y\334\353\212U\300\323\270\257\10jar\233\16\276\235\274\264K\225f#\224\334\232\370\346\331{\240\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:55:55.684881 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.686238 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:55:55.832555 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:55.869158 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:56.876881 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:57.885172 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:58.153642 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:55:59.161120 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:00.168459 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:00.640506 recvfrom(19, 0x5e630b0074e3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:00.736758 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:00.737422 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:00.738650 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:00.748368 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:00.749028 getsockname(19, {sa_family=AF_INET, sin_port=htons(57574), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:00.750451 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:00.751895 getsockname(19, {sa_family=AF_INET, sin_port=htons(57574), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:00.767114 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\36\231t\315\267\250\230J_\214U\203-\321\301\324B\370\203\360\250\204\330\313Gp\vzh\2705\25 \252\376\227Z\276Ds\235\257\205sh\1W\27`\09}\340?\350T\252d\333T\337\\\342\220\334\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:00.768207 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:00.938429 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:01.946457 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:02.956254 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:03.241847 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:04.249522 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:05.256802 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:05.740885 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:05.833567 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:05.834916 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:05.838938 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:05.848742 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:05.850276 getsockname(19, {sa_family=AF_INET, sin_port=htons(37810), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:05.851357 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:05.852754 getsockname(19, {sa_family=AF_INET, sin_port=htons(37810), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:05.864245 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3z\246'\200\202\6\235\4\237N{N\307l\210\254\250c\372xZI\355N\220\210\300mO\35\255\37 \364\0102\10\354V\267\16\241\343\227\340\217\327\300\26\243\334\10x\230\347eP\270\240\353(\340,\4\225\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:05.865883 recvfrom(19, 0x5e630b0b54d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:05.899084 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:05.900505 recvfrom(19, "\2\0\0v\3\3[\225\213\326\211\362\236\371\375\350\241\26\302\212\212\361|@\5\305Q\36\303\225\3735\35\2\347<\"? \364\0102\10\354V\267\16\241\343\227\340\217\327\300\26\243\334\10x\230\347eP\270\240\353(\340,\4\225\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \25/'_\26\226z\370\33^\212dnG6\344\237\275\360\220\222\244\356\3523\0I\361\24+/5", 122, 0, NULL, NULL) = 122
+2457  14:56:05.902902 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:05.904447 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:05.905440 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:05.906657 recvfrom(19, "\236q\264b\240\2079^<\v~\377[\263\202\341\354B\236\5\v!\257\26\353s\20B\352b\30\376\6+\367UeY\22\361N\24", 42, 0, NULL, NULL) = 42
+2457  14:56:05.908131 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:56:05.909434 recvfrom(19, "q\265\35#r\274\201.:5\331\373\276\35\36\226W\207+\254\342D6\262j\276\320m\270\270aQ)D\266\362.B>\273\341\217\0\343\240u9\323\34#\242uu\370XH[\342$%\241cG\26!\365\37Y\211\266\4\355\221\260\240\17\27\37H{\237q\205x\315Da\226-\223\32;\n\3754L\320\0\0\357\260\r%\6\372\245I\342W\336ii\3115\207Q\203q/\2455\200P\347\212\352\317\277"..., 3886, 0, NULL, NULL) = 3886
+2457  14:56:05.913137 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:05.914583 recvfrom(19, "\25;<\t\351\260\375\n\375<C8\307\304t\204\246\2475\n\363I\265\200\17\334\377~\267Nj\260\344\375\r\270\326?\210\36\30\5l\223\2369{\263\344\"\4\327ja\345\246-<\374y\225\253\214\353\ni#\177\16k\336\20\234p\203@@\335\315\333\214\234\310\310\311\276[1\224\10S\260R\v;0\33+W\245W\245\271J\320\274$<\17\324\203\337\374\203a\306^\26\317\227\7\371\357\354\2021\340\206"..., 281, 0, NULL, NULL) = 281
+2457  14:56:05.916457 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:05.917563 recvfrom(19, "\211&H=W\237\n\n\347\342\306\360(\366\343\205\t\342\"\t\236\35\20*\231\333t\3611\312\330.\201\302aG\353\244OUG=\230\276\10Y\355\264ql\353\7L", 53, 0, NULL, NULL) = 53
+2457  14:56:05.918759 sendto(19, "\24\3\3\0\1\1\27\3\3\0005\22\313h\217\264g\245\347\223\216.eH=\317\343\224\234\250\372\326bD\27@8\237\322\277\22\310\353\365 \211\267\274\221\323a\372\255\315\17MV\3\316\225\232\376\240)", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:05.920675 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:05.922082 getsockname(19, {sa_family=AF_INET, sin_port=htons(37810), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:05.922835 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:05.923343 getsockname(19, {sa_family=AF_INET, sin_port=htons(37810), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:05.923943 sendto(19, "\27\3\3\0017l\223\303W\343\321q{\315[\346\10\315\305\307C\333\22t\24\257NtR\272\2332t\352\371c\21\244ug\3762\203]M\236?\361\361\331A\r\346\20\tsZaH\332E\f+\246\230\336\223\20 s\1X\235\2408\346s\3473s\200\306\3024\377hh\340\252p1X\235v_4\372UWz\241\334\262,\3J\251\34k9\205\367I(o6\26\213\0V\276\352K\10\343'?\371"..., 316, MSG_NOSIGNAL, NULL, 0) = 316
+2457  14:56:05.952605 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:05.953286 recvfrom(19, "\320\333\3701\31V\341\207\324lW\221\27=\1*\224y\16\23\21\7\t\253\334qc\351\370\240\244\212U(S\236\335m[-\36\330\346FW\221.\365\361|\315\216$\345\372\207g\321\4\234+\17\246\276\354\220\322j\342QV\304\216Y\365\363\37\202\351\n\220=C\362\215\270\357\221\213j\306\206\374\3\302,#\"\211\373\"^f\n&\37\345\r{\227J\360\353n[\373\271\271GO\216\262\271\362\r\304\346\n"..., 174, 0, NULL, NULL) = 174
+2457  14:56:05.954205 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:05.981416 recvfrom(19, "\27\3\3\5\274", 5, 0, NULL, NULL) = 5
+2457  14:56:05.982908 recvfrom(19, "\352\0M\376\n\225=\262\336\3578t\347\211\22\263\246\26302\353\352i\216m\6\2012\211\267\303\370\340\333\t\357NPJ\177$1\356\333\373\347c\304\213\201\27\250\203{f\331eJ8\320\367V\34\233\4d\214\202\365eb)f<\254E\230\234R)\366\352\6@\371\264\364'\241\34V\236U\301\253_\331\16\310<\272F@4\202\"S\325+\225\265\222u\301},\300\226\221\356\354\267B2\221\355\370\321"..., 1468, 0, NULL, NULL) = 1468
+2457  14:56:05.986093 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:05.987287 recvfrom(19, "\2Y\334\241\277B\230~\302*\254;\332\fU\215\315AO);d", 22, 0, NULL, NULL) = 22
+2457  14:56:05.990703 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:05.991284 sendto(19, "\27\3\3\0\23\361;Tq8\2062\301o\34\252\26\266zoF\216\206 ", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:06.028580 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:06.034020 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:06.035322 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2464  14:56:06.039577 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2464  14:56:06.042583 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2464  14:56:06.043221 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2464  14:56:06.043617 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2464  14:56:06.044717 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\263\10\1 \0\1\0\0\0\0\0\1\3rim\vattestation\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=55}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=55}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="N\26\1 \0\1\0\0\0\0\0\1\3rim\vattestation\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=55}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=55}], 2, MSG_NOSIGNAL) = 2
+2464  14:56:06.048173 recvfrom(21, "\263\10\201\200\0\1\0\2\0\0\0\1\3rim\vattestation\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0\216\0\4\246u8Y\300\f\0\1\0\1\0\0\0\216\0\4\246u\233;\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 87
+2464  14:56:06.054817 recvfrom(21, "N\26\201\200\0\1\0\0\0\1\0\1\3rim\vattestation\6nvidia\3com\0\0\34\0\1\300\20\0\6\0\1\0\0\2\346\0E\6ns-781\tawsdns-33\3net\0\21awsdns-hostmaster\6amazon\300#\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 136
+2464  14:56:06.057490 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2464  14:56:06.057873 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2464  14:56:06.058325 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2464  14:56:06.058605 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112966, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2464  14:56:06.059365 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112966, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112966, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2464  14:56:06.059798 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112966, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112966, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2464  14:56:06.060241 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112966, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2464  14:56:06.060752 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2464  14:56:06.061358 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, 16) = 0
+2464  14:56:06.061635 getsockname(21, {sa_family=AF_INET, sin_port=htons(53651), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2464  14:56:06.061911 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2464  14:56:06.062203 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.155.59")}, 16) = 0
+2464  14:56:06.062449 getsockname(21, {sa_family=AF_INET, sin_port=htons(38757), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2464  14:56:06.063127 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2464  14:56:06.064286 +++ exited with 0 +++
+2457  14:56:06.065191 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:06.065462 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:06.066250 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:06.072051 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:06.072302 getsockname(19, {sa_family=AF_INET, sin_port=htons(58160), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:06.072552 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, [128 => 16]) = 0
+2457  14:56:06.072802 getsockname(19, {sa_family=AF_INET, sin_port=htons(58160), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:06.083635 sendto(19, "\26\3\1\6\37\1\0\6\33\3\3\271\22\f\366\10\257\30\343\371\341\200+Yvv\3309\211LGwB \256\266\307 C\231]\230\300 Wt\355f\36\33\237\363\2u\343\346\365s\376\271X&Ilq\240\227l=WT=K\216j\212\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1572, MSG_NOSIGNAL, NULL, 0) = 1572
+2457  14:56:06.085141 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:06.086127 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:06.222943 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:06.269413 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:07.277927 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:08.286169 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:08.552863 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:09.560675 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:10.569107 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.038627 recvfrom(19, 0x5e630afcb8d3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.053377 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:11.055099 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:11.059285 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:11.069454 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:11.070313 getsockname(19, {sa_family=AF_INET, sin_port=htons(58164), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.070936 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, [128 => 16]) = 0
+2457  14:56:11.072449 getsockname(19, {sa_family=AF_INET, sin_port=htons(58164), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.088113 sendto(19, "\26\3\1\6\37\1\0\6\33\3\3\345\16\4\337\356\216\306\364\32\354,q''FE\5\264bw\342IlS\6w\357\30\343\324Z\257 \2541\341@\207h&@cf\301_r\234AC\5u\3FH\353L&\240\254\243\315+!\263\372\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1572, MSG_NOSIGNAL, NULL, 0) = 1572
+2457  14:56:11.089554 recvfrom(19, 0x5e630b0b7c73, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.123940 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:11.125343 recvfrom(19, "\2\0\0v\3\3\31\217;>\306\t\250\365L\247\355F\213o\363i\330ip\6\254\355\270=\355\235NY\2200i\n \2541\341@\207h&@cf\301_r\234AC\5u\3FH\353L&\240\254\243\315+!\263\372\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \177*l\325^\212F\317\325\0\230KO\245!\274B\0k\226\237\355I\202\362\241\242\360W \205\37", 122, 0, NULL, NULL) = 122
+2457  14:56:11.126684 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:11.127387 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:11.128870 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:11.130411 recvfrom(19, "!.\372\242\214u\236W\302^\314J<@(\233\334\316ss+\335\307`\362\354\250\3\7@\325/\312\336\305\231\352\r\355\341\377\313", 42, 0, NULL, NULL) = 42
+2457  14:56:11.132409 recvfrom(19, "\27\3\3\0173", 5, 0, NULL, NULL) = 5
+2457  14:56:11.133678 recvfrom(19, "\242\320\3118_\260\360z\264D]\21\376\22z\226j\367\230y\370\31\274i\230\356k\214\316\205e`.Q\247D[}\343\321R\24\221\256\254\360\16\367\222\22\35\t\2\305?\27\205=\311\230\203\257\3\255x\265\243\362@\270\321Q\2068\233\213Y+\300,\262\322\336\211\364\10K\305 \33\324sVi\2328\3115\0Hi\304\266\271\235{A\\\244}\7\\=\354\335U\210\334\3548\n7\33zx\342a;"..., 3891, 0, NULL, NULL) = 3891
+2457  14:56:11.136659 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:11.137438 recvfrom(19, "\3\27\316\177\v\336(\326\331\315s<Y\376'\222\261\353\352\366\361\373\332\265K\316\360T\177k\337\343\354\354U\6\360\213?\374\363\177/h5\334\201-\2\321Z\337\341Kq\216s\360\320\212\267\30\330\236\353#\251g\307\352$\346\376\351\201P\342\241\271\252\343\367\257H%\315\200\376\323\255\307\212\233i\254~\r\327W\344\327>\361ET\347k-X\253\332\307\362\236\224\231\214\203\21\37\200\246\17H!qz\365"..., 281, 0, NULL, NULL) = 281
+2457  14:56:11.139483 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:11.141076 recvfrom(19, "\31\34\306\0370\363\253)\331XXK\230\320\25\361\275U\26\333P\375V\7\200\257\264'p\334\319\347y\30\214\203\340\326\226+t]\235b\303\312\225!\220\340\237w", 53, 0, NULL, NULL) = 53
+2457  14:56:11.143103 sendto(19, "\24\3\3\0\1\1\27\3\3\0005w\246!r\262q\35P\315j\r\344\350\264\373\203\37\203E\266 \31\341*\16\223HK\325\274\257V\267'\316yJ\v\305\16a\346\352\26]\201\23\270z\227\0377\313", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:11.145075 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, [128 => 16]) = 0
+2457  14:56:11.146363 getsockname(19, {sa_family=AF_INET, sin_port=htons(58164), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.147928 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, [128 => 16]) = 0
+2457  14:56:11.149509 getsockname(19, {sa_family=AF_INET, sin_port=htons(58164), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.151396 sendto(19, "\27\3\3\0v\345\352h\350\253\270f\n\344)\326\177\303=\204\212\310\353q\244g\356\253\256\23\25\374y\375\326DW^\231\371\311\224.\213v\311\240\211bE\216\6\307i\311\335!\241\275\255\6\231H\317w\206\324\363\347\203\252\333d\33\217\217\216\370\221\26\24\336\3357\342\32\333|\207h$\313\335\313s\220\267\1\333\354\354\35\247gpR\365\301'\304\301@O,5\253\2000}qa\320\372", 123, MSG_NOSIGNAL, NULL, 0) = 123
+2457  14:56:11.177123 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:11.178870 recvfrom(19, "\304\tw\263L\251\204\26\310\374\34\335\262\377\214o\36\375[\204\216\227;\310\364F\345U|\374M+Go\306\377]T0DwU,\365\347\313-\26xt\212\210\6\0001\25\3160\263I-\307j\t\257\232tM^\376yh\30F\231\351Do\372\32\200Cb)\340\355\310\304\363\0102\3\351[\320\306\0304v\377\301~\300\4r\17\22M\350\241\235\253\277?ZBQ\316\227\364\347\327\201\314\375\326\340\""..., 174, 0, NULL, NULL) = 174
+2457  14:56:11.180597 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.193531 recvfrom(19, "\27\3\3@\21", 5, 0, NULL, NULL) = 5
+2457  14:56:11.194448 recvfrom(19, "\347(\22x2\261\204\4\252\375\376\357\273\264\233C\354.|\0\263\377(\302N\205Y\37\34\357\220\301\367\223v\304w\npk`\22\16U}\275\34\2327f;c\305\250\277t\362.\334\357\311\246.\336\26\3123\37\341\352`\304\345\326QqPsI\360li\363\320\233(>\317\231\377S\272K$\250|\230\250\361\215')\3241\224\231\30\213\263}pA\2752}\245R\177$\300\376\220\330\313\373\300=\336"..., 16401, 0, NULL, NULL) = 16401
+2457  14:56:11.197119 recvfrom(19, "\27\3\0032^", 5, 0, NULL, NULL) = 5
+2457  14:56:11.198870 recvfrom(19, "\276[\202\207\375\3355\267U^\300\242\3663u1\222&\322\4\306\6^B\235_\22\17x-oW\322\230\246\322>A\241@\324\334\242\317UQ\341\367\311\217\237\4NzC\334\243xN\342QB\210\321\2\7\243>C\"\270\307.\35\32z\263qL\347L\221E'\321\323\237\274\365U\334\0014\2552\216!9k\210P@\211[m.\234\3702\220=4r\257\221\362*J\341\243\275\347\323\355\273)Yl"..., 12894, 0, NULL, NULL) = 12894
+2457  14:56:11.201626 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:11.203218 recvfrom(19, "\230\243\306\275\27z\346??\3627\204\247\351\323\313'\203#\233\321\6", 22, 0, NULL, NULL) = 22
+2457  14:56:11.207492 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.208401 sendto(19, "\27\3\3\0\23\340r\212\31\340i\10\331\226'\346\34t\205g\242t\17\375", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:11.244647 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:11.250193 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:11.251228 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2465  14:56:11.256403 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2465  14:56:11.261511 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2465  14:56:11.262917 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2465  14:56:11.264103 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2465  14:56:11.265530 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\265\214\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="%\213\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2465  14:56:11.269745 recvfrom(21, "\265\214\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0t\0\4\246uqy\300\f\0\1\0\1\0\0\0t\0\4\246u\3109\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2465  14:56:11.275119 recvfrom(21, "%\213\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\341\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2465  14:56:11.277321 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2465  14:56:11.277706 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2465  14:56:11.278102 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2465  14:56:11.278386 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112971, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2465  14:56:11.279061 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2465  14:56:11.279461 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2465  14:56:11.279816 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2465  14:56:11.280433 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2465  14:56:11.280676 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2465  14:56:11.281038 getsockname(21, {sa_family=AF_INET, sin_port=htons(50617), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2465  14:56:11.281322 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2465  14:56:11.281584 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2465  14:56:11.282047 getsockname(21, {sa_family=AF_INET, sin_port=htons(33572), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2465  14:56:11.282608 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2465  14:56:11.283906 +++ exited with 0 +++
+2457  14:56:11.284511 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:11.284869 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:11.285651 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:11.291607 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:11.291917 getsockname(19, {sa_family=AF_INET, sin_port=htons(39498), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.292201 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:11.292470 getsockname(19, {sa_family=AF_INET, sin_port=htons(39498), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.300719 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\330\240~,\355\300\216\16L\374\224\350b\1\224\v\210)\333\211\354{\266\317\356MP\371W\31{\327 \265nc D\362\35U\254\363}\350\2 \335\323/\243\204\31\5\214\240\205\373\343\301\tO\262\266\17\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:11.301672 recvfrom(19, 0x5e630b06d183, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.302570 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:11.440320 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:11.440885 recvfrom(19, "\2\0\0v\3\3\367tr\277\223\21\vMw\337k\310\326:\337{\306\341\267\234\\\6\272\274\302=\300\276\364\246a\343 \265nc D\362\35U\254\363}\350\2 \335\323/\243\204\31\5\214\240\205\373\343\301\tO\262\266\17\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \200\22\337\361q\334\347\v\331\0\260GZ\302\222\233bS\36~\270\334\212wr\314\353p\205MeV", 122, 0, NULL, NULL) = 122
+2457  14:56:11.441849 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:11.442369 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:11.442811 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:11.443209 recvfrom(19, "\222\212\352\342p\267\203Y\273\245\204V=\0\377\205c1\201?\362\330\370\326\362d#\266(\263\370\365\243\30GKC\271i\10\7?", 42, 0, NULL, NULL) = 42
+2457  14:56:11.443670 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:56:11.444134 recvfrom(19, ">M\370k,w(\27\261W\265v\36\320\250\257\2036\31\364\355\276\336\370\361\27%\263\275{\207\277R\5 N\377\341\6\275\377\16\377j\371\261\265\275\340O\253\200s\372\362\210\345\270\317\307\354.\366\243\354\373\2s\3065s\325>\32/\300hW\273\260ag\274\320\7\3\262i\263\254\325e\214\371.4\241\6\322R\264\371pE\267\213\372\241\266X\337\20\231s&\205\v\301D\246\6\211\337\204\254\204\22\220"..., 3886, 0, NULL, NULL) = 3886
+2457  14:56:11.446508 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:11.447334 recvfrom(19, "h-\345\230\5\337\2434\263\214\366+\303\213\236(HA\342\304X\01025\235g\270\316\310\301\313\361\25h\373\3\225\7\245\335\321*\34N\263\254\270\202\237\274\257r\307i\323k^\233Y\350\317bDH\243\226\177\355\25\240mW\300,\3001\270\277\373k\f\24\340\201\261\nu\35\277#\217\27p\342\310v\10k\230\302\34\222L\260\223\271(\223\321\217\367[\2055\1\23M\366\346\272\30Xct{(z\243"..., 281, 0, NULL, NULL) = 281
+2457  14:56:11.448371 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:11.449119 recvfrom(19, "\20\177\203\334\247\233G \244\23\275\354\345/l+&\205\37\372I\265o\326G\r=u$\26\307\361IV7\323lZ\301T\306?\\x-:\343\6$*\323\314B", 53, 0, NULL, NULL) = 53
+2457  14:56:11.450072 sendto(19, "\24\3\3\0\1\1\27\3\3\0005\3002\325\361*\211\376$ +\327a\355,\365\232\213]HZ\3F\316\313\364W\377\205\305^sK\327\241\323(\355,sr\325\257j$%|\266>\"\36\37\214#", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:11.451412 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:11.452904 getsockname(19, {sa_family=AF_INET, sin_port=htons(39498), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.454461 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:11.455913 getsockname(19, {sa_family=AF_INET, sin_port=htons(39498), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.457236 sendto(19, "\27\3\3\1?:N\256\251\222\301\25\272Z\1784\346\2\351\274\362\345E5\266\365-\342\0\347\276\263\10{eh\312\321\3451\225\300T{1\253~\217a\335`1Q0\333\300\23\262\20\33\303\2431\r(\207\330\275\211\213\303\177\211T}\341\2\260\366\306v\263\253\243\235\352\265\211l\337\346\333IaO\275\356\357\333\375,\200~2\\\r\22\204\204n\201A\23c7\273\270\321I\22\366\217\336\357\363b\227"..., 324, MSG_NOSIGNAL, NULL, 0) = 324
+2457  14:56:11.483885 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:11.484617 recvfrom(19, "\24\247:\215xr\0N\351\346\222\261TH\354M\265\267\f\205*\17'\251\276I\320aA\345\341\227\200o\244(8\34\232>c\215\6\324/\"c\4 \244\261\321d\261\207\2721x\311$j\224\307\234\27\337\324\37\251\266N\225\331\207Tu\364\344;\312\351\272\270\352\35\355\30s_\315C\340\367\256\217\2174C\333d\214\37\306S!R\32\2453\323^\357\321$\244WP\212[\30n\n\\\6\242\253\32\336"..., 174, 0, NULL, NULL) = 174
+2457  14:56:11.485830 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.514527 recvfrom(19, "\27\3\3\5\271", 5, 0, NULL, NULL) = 5
+2457  14:56:11.516061 recvfrom(19, "C\33\335;p\224\337\10\365\341\321#-NR\236\271sjHvS\347_V)\10\357\7\200\273%\257\210\6\215\363\1w\204\227\234\35\374\355\226\303\201Q\207G\220\3423\337\236F\360uD\3301\254\224c|\364\270E=\324\214\16\200e\263\255\201\221\210\373\312\n\346\361\vgQ\216\317\366\344\330\5\224\22:NYHR+\271\335\274\261\227\347w&\376\351@-{\256*\250v\3066\211\237h\367\313\233\226"..., 1465, 0, NULL, NULL) = 1465
+2457  14:56:11.519128 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:11.520641 recvfrom(19, "&\257\342\353\247\375%L\264\276o\375\361/%\312\356U\376\2722n", 22, 0, NULL, NULL) = 22
+2457  14:56:11.527316 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.527930 sendto(19, "\27\3\3\0\23HH\350\232\344\315\270\340G\0366)\356\25jN(AO", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:11.557667 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:11.563676 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:11.564723 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2466  14:56:11.569747 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2466  14:56:11.573101 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2466  14:56:11.573498 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2466  14:56:11.574092 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2466  14:56:11.575119 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\216\32\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base=";'\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2466  14:56:11.577282 recvfrom(21, "\216\32\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0t\0\4\246uqy\300\f\0\1\0\1\0\0\0t\0\4\246u\3109\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2466  14:56:11.585339 recvfrom(21, ";'\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\315\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2466  14:56:11.587448 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2466  14:56:11.587924 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2466  14:56:11.588447 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2466  14:56:11.588729 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112971, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2466  14:56:11.589402 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2466  14:56:11.589874 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2466  14:56:11.590349 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112971, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2466  14:56:11.590861 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2466  14:56:11.591201 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2466  14:56:11.591458 getsockname(21, {sa_family=AF_INET, sin_port=htons(39103), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2466  14:56:11.591708 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2466  14:56:11.592031 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2466  14:56:11.592280 getsockname(21, {sa_family=AF_INET, sin_port=htons(44114), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2466  14:56:11.592756 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2466  14:56:11.594027 +++ exited with 0 +++
+2457  14:56:11.594669 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:11.595082 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:11.595768 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:11.602385 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:11.602738 getsockname(19, {sa_family=AF_INET, sin_port=htons(39512), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.603102 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:11.603405 getsockname(19, {sa_family=AF_INET, sin_port=htons(39512), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:11.613652 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\233@^\366\227\221n\36\23BL$\312\245\312\213\27\342\265\vd4\2361\fl6\331?j\16\223 f\321!r\27\226u\305\253\310\351\200[/\24\360|\307\225U\"\312\263\355\300i:\31\240\346\226\267\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:11.614494 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.615064 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:11.739459 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:11.798468 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:12.805834 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:13.813100 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:14.083069 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:15.090471 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:16.097934 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:16.568529 recvfrom(19, 0x5e630b0cf533, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:16.644425 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:16.645911 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:16.649532 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:16.660103 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:16.661555 getsockname(19, {sa_family=AF_INET, sin_port=htons(44544), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:16.663423 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:16.664584 getsockname(19, {sa_family=AF_INET, sin_port=htons(44544), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:16.680217 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3Z\v\323\375\30\222\246Q\325\233\24\210R\217\337\3535\217\207}\372\203\347^K\362\354v)0\276- 7baR\274\363\302x\364\235X\344\255\235~}\234\317Pi\312\232\224\257*\331\2348\322Cb\31\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:16.681867 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:16.848104 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:17.855383 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:18.862509 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:19.148475 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:20.155500 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:21.162828 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:21.649083 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:21.848160 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:21.849078 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:21.852748 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:21.862408 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:21.863913 getsockname(19, {sa_family=AF_INET, sin_port=htons(44554), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:21.864590 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:21.865561 getsockname(19, {sa_family=AF_INET, sin_port=htons(44554), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:21.881080 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3z\224\33@\231X#\17\366.\200\215\337N\234\237\2653\2\22\345>\232\242\34\210\227\211\20\333x\275 py~A:!\10\37\357\274Fp\271\343\226\250W\25\256\341\304\266]$\331\250\220\250\10\352\22\352\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:21.882754 recvfrom(19, 0x5e630b0edbc3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:21.915819 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:21.917234 recvfrom(19, "\2\0\0v\3\3\247\244\312\347\323:\"\316\3\255W\35\313\25\347\201W\363)\257\t7ba&\t~1c\242\312\226 py~A:!\10\37\357\274Fp\271\343\226\250W\25\256\341\304\266]$\331\250\220\250\10\352\22\352\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \341[l)\210\245 l\362\365\352-\304Z&\2341Tt\177\3\f.\347\320s'\374\337\21\6z", 122, 0, NULL, NULL) = 122
+2457  14:56:21.918696 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:21.919905 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:21.921421 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:21.922576 recvfrom(19, "\314\235\200I\213\356\306\37\372\314W\177\221\206K\317\2612\211R\233\234$;\367\302b\266\\\334;\207\224\251\375G\357la!\227\4", 42, 0, NULL, NULL) = 42
+2457  14:56:21.924107 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:56:21.925395 recvfrom(19, "u,u\270\3249'\234?)\312B;`\361gA:\201\372\34}e~T'\374w\236\321g\252l\312\0250q\373\17E\341\320\203\304{vU\353A1g\305\211\352\345\2174\376\360\34\336\210\22\314B\275\266\2619\262Ny\376\372\240\35\2353\255d\343\203I#\21\316c\1\356\231\205\210\313b\327\303\260\\c\235\212\302\360w`\220\352K\244\23/\276\362\225QZO\231\33\373w\321\263\362\0021\35U"..., 3886, 0, NULL, NULL) = 3886
+2457  14:56:21.929092 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:21.930522 recvfrom(19, "':\245E\21\34/\0\307Q\223\266\324uv\270\211s\4\31325\33'\25\347\343\220\347\312d\26W\235\320b\275\343:C\350\0\263d}\351\230Xa\316\202!/4\307\32\fV\273\f\300\317\306\6/\274\256\30p(\350O\"\320\236\2208\312\242\314\203V\321\365\252<v\202a\36\32\243P\357c\264J\266\206\243@\2\216\316e\34\262VHO\277\363\347Jo\254\265\377\342\r\253\351\7$*qL("..., 281, 0, NULL, NULL) = 281
+2457  14:56:21.932214 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:21.932791 recvfrom(19, " \202\215\264{n\341\310q\t\252\235\201\274\276\372\250\234\325{k\322;\245\207Jn5\265\3433\25\247\247W\30/p\271\252oU\356W\324^d~\247\350D\324'", 53, 0, NULL, NULL) = 53
+2457  14:56:21.933820 sendto(19, "\24\3\3\0\1\1\27\3\3\0005\301H\214\226\257\0\320K\377\32y\\\240\377\316\327\301\261\32Oq\377\360~A\262\367\271\262p\v\222\364\223T\246\221\17\352\271\270\216\236\2274\\\251\374P\224\231\206\227", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:21.935731 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:21.937272 getsockname(19, {sa_family=AF_INET, sin_port=htons(44554), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:21.938753 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:21.939744 getsockname(19, {sa_family=AF_INET, sin_port=htons(44554), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:21.940818 sendto(19, "\27\3\3\1B\300:\204\262E\256\20t#K2\356,r\217s?\347\214`\304/9P=\312\240\226\20\270\2R\32\250\222Y\266(\323R\253\201g\7\311\351\330R'\301\340]\2c\244tt\353jr\245\315\2774\202,\257,\271\323N\372\306N\267\\\241\237\364D\240\265\305\363n}\230H\344\300\214\v=\371\372*\177\2\3\251v\3547\256\10\21\274\375\325\376\224L\202M\323\354,G\244\352\351\0\364"..., 327, MSG_NOSIGNAL, NULL, 0) = 327
+2457  14:56:21.967144 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:21.968554 recvfrom(19, "\230\242i\27\360oH\364\263\326{\304\277\212\243\0\375\234$\202\214t\277\31FJ\221\345K\255\270>\257\355c%i\213>\200l[\251\256\311\20\206Cg\350\3264\254{w\335\261\34\226q\327\305\276p\6u\223\211\345\nf\311\207\272\256\17\304~\177'\6\305\275\22[\226dN\t\203h\2523X\210\3379wGP!\36\7\325\261\344\340\221\371:\260\346\346N>\25C\367e\25[\303P\347\317\0264\220"..., 174, 0, NULL, NULL) = 174
+2457  14:56:21.970134 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:22.001425 recvfrom(19, "\27\3\3\5\327", 5, 0, NULL, NULL) = 5
+2457  14:56:22.003370 recvfrom(19, "\326I\2465\351\33\16\3005\230z\226q\242cP\23\301\355\246\223G\260\310F\316\337\353\301K|\347\260\270\233\343\236\355\353+\243\302\23\326>\346z\271\36\207t\f\307\236\216\207j\303\252\211u\246\1\202\277\332\37\373;\325\362\354\221\375\7\240ETk\260\16K\4\334\247\215\361s\2314\22\23\307\244\347\16g\345uI\262=\333\35\2`\223\312(l\327\275\215\331%\366\244\255\322u\331\363\37\364K\213\225\241"..., 1495, 0, NULL, NULL) = 1495
+2457  14:56:22.006392 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:22.007526 recvfrom(19, "\334\10\371\307\272\261}I\316\266\t#n2c\4\266\323L\362\362D", 22, 0, NULL, NULL) = 22
+2457  14:56:22.012788 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:22.013628 sendto(19, "\27\3\3\0\23\271\207\210\222\200\316\17\211g\0304u~\256\f\310\215-#", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:22.045849 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:22.050863 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:22.051809 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2467  14:56:22.056638 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2467  14:56:22.060937 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2467  14:56:22.061803 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2467  14:56:22.062362 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2467  14:56:22.063401 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\347\375\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\377\373\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2467  14:56:22.065605 recvfrom(21, "\347\375\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0i\0\4\246u\3109\300\f\0\1\0\1\0\0\0i\0\4\246uqy\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2467  14:56:22.073575 recvfrom(21, "\377\373\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\326\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2467  14:56:22.075108 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2467  14:56:22.075437 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2467  14:56:22.075837 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2467  14:56:22.076159 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112982, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2467  14:56:22.076638 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112982, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112982, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2467  14:56:22.077148 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112982, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112982, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2467  14:56:22.077514 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112982, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2467  14:56:22.078091 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2467  14:56:22.078340 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2467  14:56:22.078594 getsockname(21, {sa_family=AF_INET, sin_port=htons(35341), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2467  14:56:22.078870 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2467  14:56:22.079174 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2467  14:56:22.079413 getsockname(21, {sa_family=AF_INET, sin_port=htons(35232), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2467  14:56:22.079912 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2467  14:56:22.081288 +++ exited with 0 +++
+2457  14:56:22.081884 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:22.082271 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:22.083096 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:22.088811 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:22.089228 getsockname(19, {sa_family=AF_INET, sin_port=htons(43576), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:22.089722 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:22.090329 getsockname(19, {sa_family=AF_INET, sin_port=htons(43576), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:22.100897 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\352\222E\213uE\237\36r#\247\311/\214\21/\317\201{\2\335\265\7jq\10\0\251p\334 \256 c\315\337\vwV\260\302\205\3m:4A\3344N\310|\212A}6\24\354JT\312\230O_\222\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:22.102348 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:22.103865 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:22.243554 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:22.286509 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:23.294236 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:24.301063 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:24.570297 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:25.578150 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:26.585469 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.055131 recvfrom(19, 0x5e630afb46c3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.130058 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:27.131478 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:27.134769 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:27.144730 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:27.145792 getsockname(19, {sa_family=AF_INET, sin_port=htons(37630), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.146436 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:27.146920 getsockname(19, {sa_family=AF_INET, sin_port=htons(37630), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.161431 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\34\33\347a\5\t0\234\342W$\237\237\272\361\217\t\223,e\221\225\216\355I(P\217\351\225\262. \376\245x\263\234\263Ka\214\212|.\313a(>\7d\254\210\352\236N\247\0\370\217F[S\20\272\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:27.163154 recvfrom(19, 0x5e630b0f0713, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.202282 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:27.203870 recvfrom(19, "\2\0\0v\3\3Z\355L\226`\330\r\345\360\244\30\362,\360\300\274\224km<k\2\234\2140\230\260\251>3LG \376\245x\263\234\263Ka\214\212|.\313a(>\7d\254\210\352\236N\247\0\370\217F[S\20\272\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \352\227w\273\313\265]\355\377\236uX\272\274\32&S|\270\353\216$\231\256\2354\234\223\217v^[", 122, 0, NULL, NULL) = 122
+2457  14:56:27.206124 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:27.207675 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:27.209207 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:27.210852 recvfrom(19, "\220:\1\1gr\227\222\2003\241\372\1\217\237\237\213\2lyX\346\303(\3558\1\301\7a\rm\366L\335\232}%\326\2000\275", 42, 0, NULL, NULL) = 42
+2457  14:56:27.212554 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:56:27.213935 recvfrom(19, "\214Q\306j\230\207d7\316e\3374\2613H\346\242t\240\275\353H\267\\\36\273_\276\2\260\345y\2201:\246\253\376\224\364\261\376\203\200U\\\245!0Y\10nz\234\271E\236\277%\302\39\356h`\21\317\317\30\340\276S\25\22\306\4\26R[\0036%\345\31\202 I\257\346\312\375\350\257\353\360\231K]P\356\231\350}\211\21\"\375\304\224ii8\212o\5\357:\255p\263\327L\251uo\246U\252"..., 3886, 0, NULL, NULL) = 3886
+2457  14:56:27.217840 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:27.219190 recvfrom(19, "&\3520\26K\300\322@-\37\200a\223\344'GW\10\260\35\232\243\321\255\2526\343\316\305\240\21/\301a'\320\334\2p\341L\346M\23\36\26\241\255*\204\330\361\264\241\305\355>E+\273M\24U\274\2L\255\357K*\23\202\224\267\327\336K\355\34\340\n%.\177\203\350\25[r\243\254*\252\365\227\203j\313\375\0015\264\246a\205\270Yb\25{\252l\2139\202/h\263PmE\316\336\267'\237\177\213"..., 281, 0, NULL, NULL) = 281
+2457  14:56:27.221433 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:27.222782 recvfrom(19, "`\220gg\353\364v\345;!\372.\35\336\373zI\210\330\277\317l\220\22h\207\302\272Y0\220q\251\310\17X\32\250\253\306f\23\2)3\272\347v{\370=\270\235", 53, 0, NULL, NULL) = 53
+2457  14:56:27.224885 sendto(19, "\24\3\3\0\1\1\27\3\3\0005%^\246u\261mG.\262\322\3Tot\26\2 \330Qd\355S\264\344I\213\331>u\256U\223\356\25\267\247\177\314\21\350\321\302\313:EL\230*\22\374\340\274\376", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:27.226781 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:27.228109 getsockname(19, {sa_family=AF_INET, sin_port=htons(37630), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.229430 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:27.230881 getsockname(19, {sa_family=AF_INET, sin_port=htons(37630), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.232366 sendto(19, "\27\3\3\1B\30\347r\355\17\31f\330\324\247-\320\374\17\243w\242\207D\241H\362\203\351\177#j\252=\0053x3\375\231\366\273\236\356\261\372\0321\252\302x+\364y\v\216\325o\0074\248\211\7x`8\262F\37\350_\242~\366_(s)\26\201\242\227\236\255oz\23\245\230R\303\226\32H\0054\350\310-\271\220}\367)\6;M\243\34\223}\251\361T\227dn\375\241&\231\214\371\205F\302\215"..., 327, MSG_NOSIGNAL, NULL, 0) = 327
+2457  14:56:27.260895 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:27.261779 recvfrom(19, "&\204\33\25\372J\2673\242\370\302\345%\"\267\356f m\373\311\230\307\22\240nM\316r7U\37M\363\252\200\302\235%$\216C\311\361\33\266-\201Xt\253\345\34\\\221\257\36\274J\v+\33\236{7\307\344`&_\372\177\6\343\274!\6\224UA\7\240\341\232\352\222\2405\236@\273\240\27\200\367\326\314\257\272X\20:\0\267VL8yy\307\277\231a\34\5\222~\205\360\271H\365\3311r\32D\217"..., 174, 0, NULL, NULL) = 174
+2457  14:56:27.264824 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.298865 recvfrom(19, "\27\3\3\5\301", 5, 0, NULL, NULL) = 5
+2457  14:56:27.300473 recvfrom(19, "s\0035fe\321\256A\271\277j\377\314'jcMt<\271m\363F\r@\223\r\347(\210\265\271p\247\214\242<\344A\25\235\355S:\32\235\341*o.\352\253\32\33\360\03777\37\207\233J\340M\364I.\206S\220Rb&\31#\7r\206\366\204x\235z\372E\274\23\1\227\273F\326u\260\354\311)grJ+\21k\v\240\361\320B\230=\23\355f\377\316\202r\314TL\231\211\262\226*\316L\n"..., 1473, 0, NULL, NULL) = 1473
+2457  14:56:27.303148 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:27.304279 recvfrom(19, "\5JX\367[\275:\10\t\210Z-Q\216s\34\313\233\236\275E\260", 22, 0, NULL, NULL) = 22
+2457  14:56:27.314091 recvfrom(19, 0x5e630b063253, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.315532 sendto(19, "\27\3\3\0\23n\34\302\0+\321j\0\301\247\350s\370\r1\f\210\327\365", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:27.360148 openat(AT_FDCWD, "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/cert.pem", O_RDONLY) = -1 ENOENT (No such file or directory)
+2457  14:56:27.379167 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:27.386646 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:27.387838 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2468  14:56:27.392290 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2468  14:56:27.395442 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2468  14:56:27.395933 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2468  14:56:27.396517 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2468  14:56:27.397654 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\1x\1 \0\1\0\0\0\0\0\1\3rim\vattestation\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=55}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=55}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\312\177\1 \0\1\0\0\0\0\0\1\3rim\vattestation\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=55}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=55}], 2, MSG_NOSIGNAL) = 2
+2468  14:56:27.399919 recvfrom(21, "\1x\201\200\0\1\0\2\0\0\0\1\3rim\vattestation\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0x\0\4\246u\233;\300\f\0\1\0\1\0\0\0x\0\4\246u8Y\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 87
+2468  14:56:27.407174 recvfrom(21, "\312\177\201\200\0\1\0\0\0\1\0\1\3rim\vattestation\6nvidia\3com\0\0\34\0\1\300\20\0\6\0\1\0\0\2\321\0E\6ns-781\tawsdns-33\3net\0\21awsdns-hostmaster\6amazon\300#\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 136
+2468  14:56:27.409687 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2468  14:56:27.410233 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2468  14:56:27.410705 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2468  14:56:27.411319 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112987, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2468  14:56:27.412147 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2468  14:56:27.412550 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2468  14:56:27.413168 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2468  14:56:27.413702 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2468  14:56:27.413942 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.155.59")}, 16) = 0
+2468  14:56:27.414280 getsockname(21, {sa_family=AF_INET, sin_port=htons(45552), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2468  14:56:27.414531 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2468  14:56:27.414809 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.56.89")}, 16) = 0
+2468  14:56:27.415093 getsockname(21, {sa_family=AF_INET, sin_port=htons(52555), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2468  14:56:27.415585 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2468  14:56:27.416771 +++ exited with 0 +++
+2457  14:56:27.417495 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:27.417783 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:27.418479 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.155.59")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:27.423842 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:27.424224 getsockname(19, {sa_family=AF_INET, sin_port=htons(39708), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.424477 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.155.59")}, [128 => 16]) = 0
+2457  14:56:27.424754 getsockname(19, {sa_family=AF_INET, sin_port=htons(39708), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.431864 sendto(19, "\26\3\1\6\37\1\0\6\33\3\3~\316\273\324a\231\310{\27&\r\262 >\215\256\260\332\22b\244d\331\26\375\31,\305\241t\r% \275\225\23\210@t*r\331\2729+\304\256\377\305'\\\231\341.\341\264\266\211w\345\255\275`]\301\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1572, MSG_NOSIGNAL, NULL, 0) = 1572
+2457  14:56:27.433677 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.435191 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:27.582590 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:27.584249 recvfrom(19, "\2\0\0v\3\3D\301\276\304A\215\234\20\22\340gA\271\234m:\242\241\247\251\353\332\237Y/\335\324'\20\356\275\207 \275\225\23\210@t*r\331\2729+\304\256\377\305'\\\231\341.\341\264\266\211w\345\255\275`]\301\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \t\20F(\0\23261d#\220\2229\257\214\r\253\\\0251v\6\1tK0/\232\220\26c\26", 122, 0, NULL, NULL) = 122
+2457  14:56:27.586669 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:27.588478 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:27.590139 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:27.591230 recvfrom(19, "\367\22s'k\\Po\347$w\36\315\237\215J\346\213\260v\215`?\230\237\307\304\372\270\274\262\252\311e\242\355S\2165\316\302\204", 42, 0, NULL, NULL) = 42
+2457  14:56:27.593140 recvfrom(19, "\27\3\3\0173", 5, 0, NULL, NULL) = 5
+2457  14:56:27.594832 recvfrom(19, "r\351]\t\263\353\377\231rs8#\27\245\34\300\321\347D\25.a\254UYEs\276\277\256\305\307\341OLUs\221'\f\372l]\7\223\264d\247\326\207\253\346\223K\375\330\20\324\6\321\372s\347\372~j\303\342\21\252<5\376\25\225(\233d\211\356\"NN\22S\333'\272\330\230\240~xn\361UQ<\204\333\305\315\312\277\244'\230N{\342<]\376\213A\316b]\260?\334A\352NYVt\324"..., 3891, 0, NULL, NULL) = 3891
+2457  14:56:27.598122 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:27.599500 recvfrom(19, "a\365%0J\236D\276\212\374\353T\260\253>\347\272\377\242\214\251\343G,v\230G\207.\205\312\302\350\341{\370\263/R\256\255\360\377uP\273\331\204]\20Y\320\272r\23\330\277\273\303\227-\260[\231]\244\243)*\361\6{\334\3\345\337\305\262\346k\4\263B\tx\25pNW13\344\1\351[\226\344%\352\243\336\370\2255\273%\10\306\316|LAU\365\337\340@\316\20\233\240\235\2\312\371\270\347\317"..., 281, 0, NULL, NULL) = 281
+2457  14:56:27.601558 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:27.603225 recvfrom(19, "\234U\272\33%CX^\1\25T8\324\354'J\302\211E\224\372Iob\"\32\26\263Kv]e\272A\260\350Y\350`\202DC`\346&\16\303\367\314t\205\315\313", 53, 0, NULL, NULL) = 53
+2457  14:56:27.605461 sendto(19, "\24\3\3\0\1\1\27\3\3\0005|\3\350\277\337m\346\266\361'+\7\372\277\27\1J\373\274\r\200\216\311B&\217\0026\317Y\367\31\244\"7#\252]\360\272\266\372\24\313\341T\253\336\310|7P\343", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:27.607731 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.155.59")}, [128 => 16]) = 0
+2457  14:56:27.609185 getsockname(19, {sa_family=AF_INET, sin_port=htons(39708), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.610060 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.155.59")}, [128 => 16]) = 0
+2457  14:56:27.611113 getsockname(19, {sa_family=AF_INET, sin_port=htons(39708), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.612726 sendto(19, "\27\3\3\0~\22\204\262\340\344ETX\3036\210oEGO\276\f\367~R!\356\231\367y\236\34\325\\0Q\210\246\376*\17\210-2\316\221+s\351 [\273\213\230\350\373\365\351rd\26-\252AP\247\2]I*\227\3550\311\250\300\235\341\24\202 Q\247\236\223\277,s\341\306\20\214&\260=b>\243\224\375^\4\241\31wd\200\32\252\321\5\351\254\354\37G\377\304\240/YZ\177e\353\f\34\326"..., 131, MSG_NOSIGNAL, NULL, 0) = 131
+2457  14:56:27.639547 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:27.640632 recvfrom(19, "\365\201\210\\\254\321\242\361w\374\300\30\334\342\235\311\210\24:\2100\35\245k\23\3562W\0172\360E\3)m\357\373i\3\1\273\353\325h\36\202m\217\n\302\35v\251V#<6\205\4\262\204\356\337\262\231^]\2012\330\271%dA\342B\3L\362k\200\202\347\n|[\1}\3267\37?\271\356\246\215\315FE\220.\205\257\0074\321O\357H\26t\305\323O\246|\324\305\216\2%,\320\344ez>\177"..., 174, 0, NULL, NULL) = 174
+2457  14:56:27.642203 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.653841 recvfrom(19, "\27\3\3@\21", 5, 0, NULL, NULL) = 5
+2457  14:56:27.655572 recvfrom(19, "\37s5\252\262\224\33j\271-\254sH\207\267\346\334\307\303p\230\"\f\354\262\323\326\356\235m\30\235\vv\326\266\214\3\2100*\315\266)\215\316c+\340\273ci\322s\235\2567(rmQ7\177_1+\376\231k,\264,\341\326\207T\10\235B\212B\353\4\312\354UI\37z=\241\3\207\355\2613\242\276\265\210(G\327\"Av>5+\225 \267#\227\313\246\224c\f\20c\365\256m\253\36\210Q"..., 16401, 0, NULL, NULL) = 16401
+2457  14:56:27.658420 recvfrom(19, "\27\3\3/v", 5, 0, NULL, NULL) = 5
+2457  14:56:27.659533 recvfrom(19, "\254c\304\373\356=\376\265\374\305h\177\255S!\215\237\t\366>\333Q\32\276_\305\225\202\205\377\360\n\274\33pI\365;\226|\231\260q\227\270\237\361\356uH\216AfV\5\231\370g\301\34\320\326T\346\225\334\373\3323\235\272\260v\245\35\224 \177jd\275o\261\375Ct\371\247xtx\36\351C\271\357\6\302l\374\265\337rur\177f\340p\"v\347\236=.Q\5\251s\227\t\364#\222\244#\3041"..., 12150, 0, NULL, NULL) = 12150
+2457  14:56:27.662935 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:27.664592 recvfrom(19, "%eWB\343\350F\303\231q\21\262'\324\233ntH\17e\327V", 22, 0, NULL, NULL) = 22
+2457  14:56:27.674701 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.676183 sendto(19, "\27\3\3\0\23\355\367\317\246l\276e\325\24\31\222\254=;l\302\v?e", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:27.713294 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:27.722882 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:27.724213 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2469  14:56:27.730139 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2469  14:56:27.734203 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2469  14:56:27.734825 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2469  14:56:27.735485 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2469  14:56:27.736815 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="x\27\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\30\31\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2469  14:56:27.739389 recvfrom(21, "x\27\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0d\0\4\246u\3109\300\f\0\1\0\1\0\0\0d\0\4\246uqy\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2469  14:56:27.746259 recvfrom(21, "\30\31\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\321\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2469  14:56:27.748400 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2469  14:56:27.748898 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2469  14:56:27.749253 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2469  14:56:27.749756 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793112987, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2469  14:56:27.750461 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2469  14:56:27.750945 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2469  14:56:27.751404 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793112987, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2469  14:56:27.752063 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2469  14:56:27.752338 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2469  14:56:27.752759 getsockname(21, {sa_family=AF_INET, sin_port=htons(33191), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2469  14:56:27.753103 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2469  14:56:27.753376 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2469  14:56:27.753687 getsockname(21, {sa_family=AF_INET, sin_port=htons(35184), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2469  14:56:27.754292 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2469  14:56:27.755716 +++ exited with 0 +++
+2457  14:56:27.756492 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:27.756820 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:27.757742 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:27.763590 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:27.763920 getsockname(19, {sa_family=AF_INET, sin_port=htons(37640), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.764248 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:27.764522 getsockname(19, {sa_family=AF_INET, sin_port=htons(37640), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:27.774421 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3_{\222V\311oz9\207)\3@\337\33E\316\375\21\24\270\2\233\0041\\.\311I%\255\212\354 \254\366\306\315\261\244\177c \223\224|\345F\305\303\254(\266\315\230\224\3526\264-\365\303\6M\337~\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:27.775386 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.776085 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:27.924649 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:27.960350 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:28.968399 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:29.975620 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:30.244119 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:31.250660 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:32.257922 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:32.726933 recvfrom(19, 0x5e630b0e8f33, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:32.791094 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:32.792833 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:32.797053 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:32.806369 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:32.807108 getsockname(19, {sa_family=AF_INET, sin_port=htons(35846), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:32.808165 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:32.808865 getsockname(19, {sa_family=AF_INET, sin_port=htons(35846), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:32.819394 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\324\320\340\330qVUJ\264\230WW\271F\20\371\212Wa)\336i\314aE\312`\303[\363\240\266 \345\247{?BY\323m\235_\277\0\227\21\363\322QY\357\17\275\312\326x*\357\r;R\10\220{\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:32.821133 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:32.992286 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:33.998204 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:35.006184 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:35.295926 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:36.304592 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:37.312103 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:37.795452 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:37.843308 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:37.844387 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:37.848563 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:37.857141 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:37.857730 getsockname(19, {sa_family=AF_INET, sin_port=htons(35860), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:37.858256 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:37.858698 getsockname(19, {sa_family=AF_INET, sin_port=htons(35860), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:37.869802 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\3463\235\3648\234\5\226\227 \20<\276\250_\f7 \236\246,}\213\345\240\363`9r\275M\233 \34\315\345~\234\352\7^\374`\232\347\230\263\1\334\346-\371E\2302\316R\333\202\200c\341?n\332\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:37.871456 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:38.046838 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:39.055128 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:40.063181 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:40.348615 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:41.356079 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:42.363829 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:42.848264 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.095545 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:43.096879 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:43.100118 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:43.111113 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:43.112100 getsockname(19, {sa_family=AF_INET, sin_port=htons(51606), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.112789 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:43.114343 getsockname(19, {sa_family=AF_INET, sin_port=htons(51606), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.131350 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\33X\21\272O\246\367\206\224\372\221\24\353\16\333T:\221m\277\23\237\252\3L\27\t\366O:\240\31 \330\370\30\206v\253\335j?\332@\334\223\27'\263\263I%\37\1\236\201\270\201\351\353\272\333\276c\r\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:43.133175 recvfrom(19, 0x5e630b11dd63, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.178549 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:43.180126 recvfrom(19, "\2\0\0v\3\3\207\6b\2452\326\27\261U\0T\376\325\307\240\373\337\220]\35\221Jh6\3710w\27\263`.\224 \330\370\30\206v\253\335j?\332@\334\223\27'\263\263I%\37\1\236\201\270\201\351\353\272\333\276c\r\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 e\337>\n\210\357\367\316R\364/^\24\230t\261\25\376\325\201\263|;\16\236Y9 \36\335e\22", 122, 0, NULL, NULL) = 122
+2457  14:56:43.182162 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:43.183922 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:43.185697 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:43.186616 recvfrom(19, "\21\n&\332R\t9\221\351\235R\353\261Da\3702\273b\271{\21\304dYHE\326gz6UK#\276\346\36W\24\213\302\1", 42, 0, NULL, NULL) = 42
+2457  14:56:43.188293 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:56:43.189102 recvfrom(19, "K2B\n\370]\307\361\3254\307s\361\366\230\347\253\232F\23V\221\244\5fA\273\314\276}^\267\362\331\313'I\315\351{\256:[Y\336\327\366\247\r\266\305\3244\341\304\261\337\35Q\370\236\367\35\300\330Am\356&r\30!JS\223m\3117\336idg6\234\320\207{C\t\207P\233,G\301/\242\350]\202\341\234\346\20\30\266[R\352\362*wi\205\307\22Tf\204\371\345n\204\25H\224{\215"..., 3886, 0, NULL, NULL) = 3886
+2457  14:56:43.193159 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:43.195134 recvfrom(19, "\314Bq\232r\240\236||\6\302\360\333Q\364\325\311\30\256\2101\266\320b\231\326j3\1\341w/;7\200\227'Q\377\350\333\0\303\244\206\233\324F\216w7\316\346\350.\177$vFT\313\252%V\\O\325r\205\227\201\273\6i0\357\244\350{\217\272\303@\33\3112\227\233\310\241<\234\356\312\264\32gu\243\267\342\2165\24E\260\206w\3621\271\35\302\212/e,\v'\373\2\27\262\351!\f\260d"..., 281, 0, NULL, NULL) = 281
+2457  14:56:43.197143 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:43.199166 recvfrom(19, "\355\204v\341\265\30t\304wr\367\326\33\30\262}A\255\300\226\324\26\303;\366\374~\337\341\23\377\355\2I~\205ZA\200\26Hz\303Gkk\0\327\321K_\244\313", 53, 0, NULL, NULL) = 53
+2457  14:56:43.200746 sendto(19, "\24\3\3\0\1\1\27\3\3\0005\372eG\267\373\346{\234\223am\204((\344\322\252\302m\24F@\272\262\320\250\326\330\271\265\344M\261\270\270r/\17H\33j\333\367/bP\326_\270+Z]\256", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:43.202114 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:43.202900 getsockname(19, {sa_family=AF_INET, sin_port=htons(51606), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.203382 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, [128 => 16]) = 0
+2457  14:56:43.204434 getsockname(19, {sa_family=AF_INET, sin_port=htons(51606), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.207744 sendto(19, "\27\3\3\1?\347\347\325\217\336F\221\177\213\204\f>r\232\236\322\331(\365XA\221ov<\344\251\0257\303\351*\331\347Y\322\20\216l\340\206ek5KVs\22\32.\0\17\324.\354?\256_mM\203\v\314\232\351\22\230;)\244\353\352\352sp3\277\24\263](\317\270\203%\17\275\255\341 \30\231\203\313F\310mhq\211\272\252HRB\377\20\210\322\33\2~\350{\362\265\276\0\22\216\357\263\237"..., 324, MSG_NOSIGNAL, NULL, 0) = 324
+2457  14:56:43.236119 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:43.237937 recvfrom(19, "z\263\227V\245\221d\205\24M\335>\23\37\233\314\10\267\\\245K\r \364\25Q\247Kz\221\260\227\270\3376\fW1\331\200\377V\1\346\227g\205[\3\36\32Q5\0367+S\2657/\334\260\f\357@ \2474\1772\357\374\205\376\237\"\r\177\337T\"\16\327+\202\213\330\33\317\242\"\231{N>\177W\32'\205#R\307\24g\307^\245\330u`ti\33\f\342\317\332.,)k\377\26hzd\327"..., 174, 0, NULL, NULL) = 174
+2457  14:56:43.240110 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.268777 recvfrom(19, "\27\3\3\5\272", 5, 0, NULL, NULL) = 5
+2457  14:56:43.270198 recvfrom(19, "\275\214r+\373\r\273\10\222.'\324\273\373\325\355\314\\l\t\315\243\344\27q:\220\345\3357\254\264L\266e\7\204\344\214\312\300r\"$i#6X\202d3\372\266\257\255<%L\7\33\275\322\264\305s\360\"\211:\\[Z\361\272@\375\211\256\312q\2304,,\276\255\335\206\310\36\302\206\235\313\3602\222O\232[i\322\356\254\317\24\256_\313\1\26\320\205\316\307ApSt\331\205GL\277\324\331\244\202"..., 1466, 0, NULL, NULL) = 1466
+2457  14:56:43.273588 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:43.275169 recvfrom(19, "\375\31\220\375X\337l\204\273}\255\\\372\177\"K\3545\327\211bM", 22, 0, NULL, NULL) = 22
+2457  14:56:43.281361 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.282060 sendto(19, "\27\3\3\0\23Y\261\30\303*n\17\332\32D\17Px\364\3414S\16[", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:43.314927 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:43.324144 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:43.325321 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2470  14:56:43.330106 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2470  14:56:43.333631 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2470  14:56:43.334093 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2470  14:56:43.334594 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2470  14:56:43.335636 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="_G\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base=" H\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2470  14:56:43.337734 recvfrom(21, "_G\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0T\0\4\246uqy\300\f\0\1\0\1\0\0\0T\0\4\246u\3109\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2470  14:56:43.344589 recvfrom(21, " H\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\301\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2470  14:56:43.347295 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2470  14:56:43.347805 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2470  14:56:43.348299 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2470  14:56:43.348717 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793113003, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2470  14:56:43.349371 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2470  14:56:43.349847 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2470  14:56:43.350270 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2470  14:56:43.350867 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2470  14:56:43.351207 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2470  14:56:43.351598 getsockname(21, {sa_family=AF_INET, sin_port=htons(46991), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2470  14:56:43.351861 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2470  14:56:43.352184 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2470  14:56:43.352426 getsockname(21, {sa_family=AF_INET, sin_port=htons(41635), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2470  14:56:43.352940 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2470  14:56:43.354385 +++ exited with 0 +++
+2457  14:56:43.355436 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:43.355751 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:43.356550 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:43.362265 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:43.362614 getsockname(19, {sa_family=AF_INET, sin_port=htons(55446), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.362865 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:43.363148 getsockname(19, {sa_family=AF_INET, sin_port=htons(55446), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.376154 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3Q\334\227\341\214\373\255\268h\277\242\17\fuU1\326\300D\272\266\334\233_>\245\362-6\36r \251J\231\325\214\367LFN\2k\34\227\324\341\262w\23n\247x\363\373\216\32Ifu\221\177fm\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:43.377893 recvfrom(19, 0x5e630b0bf033, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.379256 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:43.530736 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:43.531836 recvfrom(19, "\2\0\0v\3\3\342d\361\234Vc\24\17v\267\244\221R\207\34\277$\334K\222\356\346\257\0243\267B\10\34\6\33e \251J\231\325\214\367LFN\2k\34\227\324\341\262w\23n\247x\363\373\216\32Ifu\221\177fm\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 \377\373\253\312\30-\262W\325\377\253N\250D\323\7x\23\263\312\36m\360\342\336\340\226\2119i\236*", 122, 0, NULL, NULL) = 122
+2457  14:56:43.534105 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:43.535869 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:43.536532 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:43.537214 recvfrom(19, "\30\241\216\320\343\27\361\366\213\376\340&\331\3142v\0%rb?\321ud\202\266Q\257\334\355s\257\352\360\202\334\262\4&\270>\\", 42, 0, NULL, NULL) = 42
+2457  14:56:43.538291 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:56:43.539078 recvfrom(19, "P}\177\317\36\2r\246l\263-\231;\1`\212\r@%\210\27\34\322C\210h\6\343\344\255S\333L\20[F`M\277\rWA\24$\314\5x\271\6\321\37\361\261C\244\n\35_S\364\203T\321\27\300W\4\335s\252\v\212\260\277\241\27\233\240!n\272\272\246\34c\2\349\252y\306NW\352\303o\256\216}\373\n0\357\353\177\17\312S\364+\277\n\354\255_\366*\342\332\3309Z\5.\312\233\225\237"..., 3886, 0, NULL, NULL) = 3886
+2457  14:56:43.541788 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:43.542575 recvfrom(19, "Qi!\325\330\325\202\253\231\347\226\216\220\31\2552\t%\31\250Y,\25\5\234R\336z\236um\225$+\1\36\365\226\256\247\372m\350Y\3560Z\244p\377\370\212/t\246C\27\275#\361\205\"\237D\325\266>\307\34\354[r\340d-\21\334\366\354\320\2777\207\7\336Z\344\344k\336yp{\326f\215\372\6\301\316\6\1X\264a+\316X^\267\21\25N\231A\307\305\377`\205e\37JbQ\207y\316"..., 281, 0, NULL, NULL) = 281
+2457  14:56:43.543486 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:43.544101 recvfrom(19, "V\244k\25u\f\246\350\364\177\327\177_\306O\240\223\t\334.t\240\332C'A\305\3510\271\247f\16)A\16\260c\240\361jy\227\v\277>\2g~O\31\310z", 53, 0, NULL, NULL) = 53
+2457  14:56:43.545249 sendto(19, "\24\3\3\0\1\1\27\3\3\0005i{\346\26J\253\201\311,rXi\3665\371Z\23\v\341\353\0053\320\331\202e\222S\242Yp\340\200O\340\0v\356H\275@UD\266\242\241a]j\327\1\266\245", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:43.546575 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:43.548241 getsockname(19, {sa_family=AF_INET, sin_port=htons(55446), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.549946 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:43.551676 getsockname(19, {sa_family=AF_INET, sin_port=htons(55446), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.553500 sendto(19, "\27\3\3\1?O\343\31\212@\355A\rg\226+\237\332\250s\256\352^\33\3759\31\334\214\315\217n\347{\244\302\213U\320\206\332\3050\242m\233\36546\6!\250\323\27Z\25\332\304x\246u\235\213\v\2`\370\360\265h\275F\361\32\366\211\234:eO\335\345\340\353:QX~28x\275A\322\251\353\217(\375t$9-A\327\375\262\2143\37\3\10\250\353J&\r\217\355,\3515\354\27\232\234\227\207"..., 324, MSG_NOSIGNAL, NULL, 0) = 324
+2457  14:56:43.579849 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:43.581666 recvfrom(19, "j\301\223\327L\302\330W\336\364\306\227\376\375\307\347 \356\215\362\264\232?D[\vbc\331\252\215*\376\3617\31Dv\316x\202\334\326\351\35\217\35\360\243\251\250x\313\2046\\D>2\326z\350\320@\242\212f\17\20\235sZ\346J5{p\221u\211\26y\32n\277B\355\313\373\350\344BO\252\371\233\5\211E\315\1>\312\223\241\2771\300\2\203\27\366\220\t:\260\270&5\7\301R\365A\316`}\244"..., 174, 0, NULL, NULL) = 174
+2457  14:56:43.583248 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.618102 recvfrom(19, "\27\3\3\5\323", 5, 0, NULL, NULL) = 5
+2457  14:56:43.620126 recvfrom(19, "\371y\23z2\243\231\267-B\375\356\33\31\204\237Sf(\354g\23\234\31\30-\362\233t\313\203\360l\2403-2\343L2sC*q-s\3757u\226\317\24\f\363\360#\311\375>\237\232\356\356ZC>\271i.y\1P)\273\25\344$\17W\4\211!#\225M\236\2\36\361\257O\372\272\265t\307\321\337\360)e\373r\364\\U2\354\27j\253,\207n\3\242\1\252\211\356\377l\263\0On\266\254"..., 1491, 0, NULL, NULL) = 1491
+2457  14:56:43.623361 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:43.624699 recvfrom(19, "\230\376+\273\301\f`!7\223\25\365\27\205\343\1\351b\263\25\343\277", 22, 0, NULL, NULL) = 22
+2457  14:56:43.634113 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.635728 sendto(19, "\27\3\3\0\23\342\2762P\177\"\31\361\342\233\356\240sVn4o\3407", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:43.674048 socketpair(AF_UNIX, SOCK_STREAM, 0, [17, 18]) = 0
+2457  14:56:43.683819 socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 19
+2457  14:56:43.685060 socketpair(AF_UNIX, SOCK_STREAM, 0, [19, 20]) = 0
+2471  14:56:43.690105 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 21
+2471  14:56:43.693653 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 21
+2471  14:56:43.694267 setsockopt(21, SOL_IP, IP_RECVERR, [1], 4) = 0
+2471  14:56:43.694909 connect(21, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+2471  14:56:43.695944 sendmmsg(21, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="0t\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="t~\1 \0\1\0\0\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\0\0)\4\260\0\0\0\0\0\0", iov_len=49}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=49}], 2, MSG_NOSIGNAL) = 2
+2471  14:56:43.698107 recvfrom(21, "0t\201\200\0\1\0\2\0\0\0\1\4ocsp\4ndis\6nvidia\3com\0\0\1\0\1\300\f\0\1\0\1\0\0\0T\0\4\246uqy\300\f\0\1\0\1\0\0\0T\0\4\246u\3109\0\0)\377\326\0\0\0\0\0\0", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 81
+2471  14:56:43.705771 recvfrom(21, "t~\201\200\0\1\0\0\0\1\0\1\4ocsp\4ndis\6nvidia\3com\0\0\34\0\1\300\21\0\6\0\1\0\0\2\255\0H\7ns-2027\tawsdns-61\2co\2uk\0\21awsdns-hostmaster\6amazon\300\35\0\0\0\1\0\0\34 \0\0\3\204\0\22u\0\0\1Q\200\0\0)\377\326\0"..., 65536, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, [28 => 16]) = 133
+2471  14:56:43.708298 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 21
+2471  14:56:43.708894 bind(21, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2471  14:56:43.709337 getsockname(21, {sa_family=AF_NETLINK, nl_pid=2457, nl_groups=00000000}, [12]) = 0
+2471  14:56:43.709692 sendto(21, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1793113003, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+2471  14:56:43.710310 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("<guest-ip>")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("<guest-subnet-address>")], [{nla_len=11, nla_type=IFA_LABEL}, "enp0s2"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1503, tstamp=1503}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+2471  14:56:43.710887 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2311, tstamp=2311}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("enp0s2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5054:ff:fee9:d64b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=627, tstamp=627}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=IFA_PROTO}, "\x03"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 152
+2471  14:56:43.711292 recvmsg(21, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1793113003, nlmsg_pid=2457}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2471  14:56:43.711811 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 21
+2471  14:56:43.712097 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = 0
+2471  14:56:43.712370 getsockname(21, {sa_family=AF_INET, sin_port=htons(47734), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2471  14:56:43.712648 connect(21, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+2471  14:56:43.712885 connect(21, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.200.57")}, 16) = 0
+2471  14:56:43.713204 getsockname(21, {sa_family=AF_INET, sin_port=htons(47071), sin_addr=inet_addr("<guest-ip>")}, [28 => 16]) = 0
+2471  14:56:43.713719 sendto(20, "\1", 1, MSG_NOSIGNAL, NULL, 0) = 1
+2471  14:56:43.714794 +++ exited with 0 +++
+2457  14:56:43.715755 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:43.716187 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:43.716895 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:43.723110 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:43.723490 getsockname(19, {sa_family=AF_INET, sin_port=htons(55454), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.723805 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:43.724209 getsockname(19, {sa_family=AF_INET, sin_port=htons(55454), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:43.734892 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3\6z\264\301\372<\346A\"\316OD\366\17,\372\212\313\350s\2\3+\262\263D\16\345XU\373\25 \356\273\325yP\304 2f27\230;#\316%3\370\342T\242|\332\313<AK\254\1\276aH\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:43.737121 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.738890 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 20
+2457  14:56:43.883862 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:43.920377 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:44.929130 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:45.936780 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:46.205566 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:47.214073 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:48.222839 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:48.688353 recvfrom(19, 0x5e630b0ff9a3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:48.734482 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+2457  14:56:48.736101 setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+2457  14:56:48.739888 connect(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, 16) = -1 EINPROGRESS (Operation now in progress)
+2457  14:56:48.750628 getsockopt(19, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+2457  14:56:48.751526 getsockname(19, {sa_family=AF_INET, sin_port=htons(55468), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:48.753072 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:48.754899 getsockname(19, {sa_family=AF_INET, sin_port=htons(55468), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:48.772184 sendto(19, "\26\3\1\6\31\1\0\6\25\3\3N\31\315\352\242\247\314\370\274\355\347\21\372\r\254\226\35\304\25\250F\261\316+\"\331\3E\177\331<[ 1wd\315}}\353\236\17\301\332P\264\225\24\246%\253\310\365\27\316\203\207\f8S\26\215\331\276\336\0<\23\2\23\3\23\1\300,\3000\0\237\314\251\314\250\314\252\300+\300/\0\236\300$\300(\0k\300#\300'\0g\300\n\300\24\09\300\t\300\23\0003\0\235"..., 1566, MSG_NOSIGNAL, NULL, 0) = 1566
+2457  14:56:48.773769 recvfrom(19, 0x5e630b120ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:48.808080 recvfrom(19, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+2457  14:56:48.809448 recvfrom(19, "\2\0\0v\3\3e\313\355Z\320\243Y\203W\310\346\321\265k\r\234&\332\316ln|\224\325\207y\24\224\231\355\26\225 1wd\315}}\353\236\17\301\332P\264\225\24\246%\253\310\365\27\316\203\207\f8S\26\215\331\276\336\23\1\0\0.\0+\0\2\3\4\0003\0$\0\35\0 n\266\7\300KWB\35O\353\340\3775\233\356\365\376X\37Jv\353\363\3025W\367\204:\27\2632", 122, 0, NULL, NULL) = 122
+2457  14:56:48.811185 recvfrom(19, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+2457  14:56:48.812180 recvfrom(19, "\1", 1, 0, NULL, NULL) = 1
+2457  14:56:48.812877 recvfrom(19, "\27\3\3\0*", 5, 0, NULL, NULL) = 5
+2457  14:56:48.813554 recvfrom(19, "]cY\177\246V\332\v\276s\373\241\336\344\363\273Ig\312=\1\351gQ\231b\326h\237$\240\331d\316\27*:VF\7 \177", 42, 0, NULL, NULL) = 42
+2457  14:56:48.814263 recvfrom(19, "\27\3\3\17.", 5, 0, NULL, NULL) = 5
+2457  14:56:48.814906 recvfrom(19, "\370de\25S\367n\365\361r\327\362\352\251\325\227\245\330\250\202z[\365\353\231\304[\21\323z\374\262:\1\357\324:\2109v\v\265`\266\230\10\16/\200\340g\230\312\201M\201\204o\232z\204\213_v\347-\353\273\303\274/\253\22\227\311\330\232[v\236\v\261\0066\252\326\26(\16\222A\370\223\"?xj\364?\236\354\177U>U5\302\204\2032TcU\241\367h\274\355\33\252:w\213\274\241\361&\351"..., 3886, 0, NULL, NULL) = 3886
+2457  14:56:48.817620 recvfrom(19, "\27\3\3\1\31", 5, 0, NULL, NULL) = 5
+2457  14:56:48.818436 recvfrom(19, "\341\35B\6\261\244\326\32%\226\202\340\365\222T\r\252\3770+\214Rx\300\347\307\366B\264?\205\372\345R.\322i\357%>\311\2066J\343 \226;'\20U7\247\263\3261\307\362\34/g\250}\214\250\365\373T\24\314v2t\315]\312Z\230\334\t\217\356\273\17\242\31\364\5G\1\2\274\346\341\360\244\374\351\202=\222\311\232\3301P\27!!E\23\351\203$Q\360\\2\336\212a\222\255\360UFey"..., 281, 0, NULL, NULL) = 281
+2457  14:56:48.819482 recvfrom(19, "\27\3\3\0005", 5, 0, NULL, NULL) = 5
+2457  14:56:48.820063 recvfrom(19, "\201#\341\312\n\241\275\315t=\"_\221\4\336\1k\345Y\232\315\16fJf\34\332\201<\332\201\3124\222\357\371Q\322\270E\202h\233\211\26b\264\1p!KH\246", 53, 0, NULL, NULL) = 53
+2457  14:56:48.821106 sendto(19, "\24\3\3\0\1\1\27\3\3\0005\271\211q;C\37O\366\363$=\365Ye\377i\346r\242STA\256\250\20c[V\334\342\301\230\351\333\360#\222\265\347\270\267U\367\303\245Ce\355O\332>\326\34", 64, MSG_NOSIGNAL, NULL, 0) = 64
+2457  14:56:48.822289 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:48.824090 getsockname(19, {sa_family=AF_INET, sin_port=htons(55468), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:48.825541 getpeername(19, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("166.117.113.121")}, [128 => 16]) = 0
+2457  14:56:48.827137 getsockname(19, {sa_family=AF_INET, sin_port=htons(55468), sin_addr=inet_addr("<guest-ip>")}, [128 => 16]) = 0
+2457  14:56:48.828817 sendto(19, "\27\3\3\1B\215\365\322\353>\312\10\2302\325\247%\240\36\3127@t\271|H\307e~g\346!E\v\222\264\6e\34\260/\336r/\f\247\203\311f^\25e\24\272\356y\277\364\">\342gPax\3522\1_\316\230\246\247\263\37r\263]sQu\243E\3\250\214\2\351\345\332%U\305\364\0\275T\27l\3661\1Lg\271p\337\3274\1\\\21\341\365\344\26\264\202\333\35\37_j\252\244\212\325\357"..., 327, MSG_NOSIGNAL, NULL, 0) = 327
+2457  14:56:48.856578 recvfrom(19, "\27\3\3\0\256", 5, 0, NULL, NULL) = 5
+2457  14:56:48.858094 recvfrom(19, "\223\274<\266@\274A\362\217\301\262\37\332NV\352,\236M>\352\333\300\303y\264\355\312\7\374\365B\7\260\352\373\17<\333\267i\4\215\240\235\373\200d\332\333\303]Foh\312Wx\353\356j\203Xw!O\364!|\333\6j\304\254w\304\33\32&Zcs\34d\273\245-X\350e\306pu\24\315\16\252%\335R\355\244|nm\334#\322\352(A\203\344\210\vURu\201\274\230\317\240\27U\267]\312"..., 174, 0, NULL, NULL) = 174
+2457  14:56:48.859836 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:48.892344 recvfrom(19, "\27\3\3\5\317", 5, 0, NULL, NULL) = 5
+2457  14:56:48.894072 recvfrom(19, "/\223\370q0\221\214\346\341)\261#R}T;\2\3261n\206'\344\327Y\351\4\360\2\320I7\200\330\0\306\346\20'\375h\341e\30N\304\223\373\364\17\243_\330`\212\3\322b\310\302\2042\204\3618NT\277\321m\377n\34\24c\235\6e\265\333\350\226c\303\260H\35\221C\213\f)\314\3279P8\205KfW=\335b\3721\215\235 \21#\2=;\f\277\233\17\365\212q5,\r\307\32\374\351"..., 1487, 0, NULL, NULL) = 1487
+2457  14:56:48.896351 recvfrom(19, "\27\3\3\0\26", 5, 0, NULL, NULL) = 5
+2457  14:56:48.898094 recvfrom(19, "\376A\333\332\31\v^\200\325\260\227\226\34\313\207*\276\337\272}\3137", 22, 0, NULL, NULL) = 22
+2457  14:56:48.906914 recvfrom(19, 0x5e630b0b9ad3, 5, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+2457  14:56:48.908631 sendto(19, "\27\3\3\0\23\307\346OR]\231\232\364\246&\257\340\4\231M\237\177\257\345", 24, MSG_NOSIGNAL, NULL, 0) = 24
+2457  14:56:48.954216 openat(AT_FDCWD, "/builds/ucs/attestation/nvtrust-multi/nv-attestation-sdk-cpp/build/openssl-install/cert.pem", O_RDONLY) = -1 ENOENT (No such file or directory)
+2458  14:56:49.031607 +++ exited with 0 +++
+2457  14:56:49.031677 +++ exited with 0 +++

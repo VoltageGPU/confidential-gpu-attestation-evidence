@@ -1,0 +1,8 @@
+address                                   ok/total  failures (tcp=0 means the TCP handshake never completed)
+nras.attestation.nvidia.com-34.120.45.54-443 8/8  
+ocsp.ndis.nvidia.com-166.117.113.121-443   4/8        1 rc=28/tcp=0.004730s       1 rc=28/tcp=0.004786s       1 rc=28/tcp=0.005330s       1 rc=35/tcp=0.004908s 
+ocsp.ndis.nvidia.com-166.117.113.121-80    4/8        1 rc=28/tcp=0.004918s       1 rc=56/tcp=0.005207s       1 rc=56/tcp=0.005325s       1 rc=56/tcp=0.005460s 
+ocsp.ndis.nvidia.com-166.117.200.57-443    6/8        1 rc=28/tcp=0.004920s       1 rc=28/tcp=0.005153s 
+ocsp.ndis.nvidia.com-166.117.200.57-80     6/8        1 rc=28/tcp=0.004953s       1 rc=28/tcp=0.005044s 
+rim.attestation.nvidia.com-166.117.155.59-443 3/8        1 rc=28/tcp=0.004447s       1 rc=28/tcp=0.004511s       1 rc=28/tcp=0.004625s       1 rc=35/tcp=0.004388s       1 rc=35/tcp=0.004575s 
+rim.attestation.nvidia.com-166.117.56.89-443 3/8        1 rc=28/tcp=0.004643s       1 rc=28/tcp=0.004673s       1 rc=28/tcp=0.004999s       1 rc=35/tcp=0.004495s       1 rc=35/tcp=0.004583s 

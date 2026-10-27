@@ -1,0 +1,105 @@
+=== 11-curl-reference.pcap : 1 TCP stream(s) on ports 443/80
+--- stream 1  server 166.117.113.121:443  t+0.000s  bytes client=517 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (2) h2, http/1.1
+  groups             (10) x25519, secp256r1, x448, secp521r1, secp384r1, ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192
+  key_share          (1) x25519
+  sigalgs            (20) ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (31) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA, EMPTY_RENEGOTIATION_INFO_SCSV
+  extensions         (12) server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share, padding
+  server: no data from server; server sent FIN
+  client sent RST
+=== 12-baseline.pcap : 1 TCP stream(s) on ports 443/80
+--- stream 1  server 166.117.113.121:443  t+0.000s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server; server sent RST
+  client sent RST
+=== 22-v2.pcap : 7 TCP stream(s) on ports 443/80
+--- stream 1  server 166.117.200.57:443  t+0.000s  bytes client=2045 server=6073
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: ServerHello version=TLS1.3 cipher=TLS_AES_128_GCM_SHA256 group=x25519; server sent RST; server sent FIN
+--- stream 2  server 166.117.200.57:443  t+0.145s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server
+--- stream 3  server 166.117.200.57:443  t+5.219s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server
+--- stream 4  server 166.117.200.57:443  t+10.420s  bytes client=2045 server=6103
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: ServerHello version=TLS1.3 cipher=TLS_AES_128_GCM_SHA256 group=x25519; server sent RST; server sent FIN
+--- stream 5  server 166.117.113.121:443  t+10.565s  bytes client=2084 server=0
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server
+--- stream 6  server 166.117.113.121:443  t+15.557s  bytes client=2038 server=6123
+  sni                ocsp.ndis.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: ServerHello version=TLS1.3 cipher=TLS_AES_128_GCM_SHA256 group=x25519; server sent FIN
+--- stream 7  server 166.117.56.89:443  t+15.711s  bytes client=2096 server=0
+  sni                rim.attestation.nvidia.com
+  legacy_version     TLS1.2
+  supported_versions (2) TLS1.3, TLS1.2
+  alpn               (1) http/1.1
+  groups             (8) X25519MLKEM768, x25519, secp256r1, x448, secp384r1, secp521r1, ffdhe2048, ffdhe3072
+  key_share          (2) X25519MLKEM768, x25519
+  sigalgs            (26) 0x0905, 0x0906, 0x0904, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, 0x081a, 0x081b, 0x081c, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_pkcs1_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512
+  ciphers            (30) TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_GCM_SHA256, ECDHE-ECDSA-AES256-GCM-SHA384, ECDHE-RSA-AES256-GCM-SHA384, DHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-CHACHA20-POLY1305, ECDHE-RSA-CHACHA20-POLY1305, DHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-GCM-SHA256, DHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-SHA384, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA256, ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-ECDSA-AES256-SHA, ECDHE-RSA-AES256-SHA, DHE-RSA-AES256-SHA, ECDHE-ECDSA-AES128-SHA, ECDHE-RSA-AES128-SHA, DHE-RSA-AES128-SHA, AES256-GCM-SHA384, AES128-GCM-SHA256, AES256-SHA256, AES128-SHA256, AES256-SHA, AES128-SHA
+  extensions         (12) renegotiation_info, server_name, ec_point_formats, supported_groups, alpn, encrypt_then_mac, extended_master_secret, post_handshake_auth, signature_algorithms, supported_versions, psk_key_exchange_modes, key_share
+  server: no data from server; server sent RST
+  client sent RST

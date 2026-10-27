@@ -3,6 +3,22 @@ from the same machine where nvattest cannot.
 19 September 2026, 21:11 UTC, workload wrk-5l3ol8ubj71g, image ubuntu-24-04-lts-595.
 Node rented and released for this run: 9.2 minutes.
 
+CORRECTION, 27 OCTOBER 2026: THE RESULT BELOW IS WITHDRAWN.
+
+  On 27 October 2026 we captured the same error on a single-GPU H100
+  Confidential VM, with nvattest 1.2.0 and 2.0.0. The "SSL connect error (35)"
+  comes from TCP connections reset on the network path, not from the tool:
+  - system curl fails against the same OCSP and RIM addresses at a similar
+    rate when it is run several times in a row (each check below was a single
+    request, and it happened to succeed);
+  - every failing connection had a SYN-ACK announcing an MSS of 0, and some
+    were reset by a packet with a TTL of 63, which fits a device one hop from
+    the guest;
+  - remote verification through NRAS succeeded.
+  So the platform's network path is not ruled out, and "THE TOOL IS NOT" was
+  wrong. The 8-GPU node of this run has not been tested again. The capture is
+  in the folder nvattest-2.0.0-single-gpu-2026-10-27 of this repository.
+
 WHY THIS RUN EXISTS
 
 Earlier today, with the driver-matched NSCQ library from NVIDIA's repository,
@@ -19,6 +35,7 @@ attestation ON THE SAME EIGHT-GPU NODE, in the same session, so the comparison
 is apples to apples.
 
 RESULT: THE NETWORK IS FINE ON THIS NODE. THE TOOL IS NOT.
+(Withdrawn on 27 October 2026: see the correction at the top.)
 
   1. Same node, same image, same minute, system curl:
 
@@ -50,7 +67,7 @@ RESULT: THE NETWORK IS FINE ON THIS NODE. THE TOOL IS NOT.
   3. Passing the URLs explicitly changes nothing. The run without options
      fails identically.
 
-WHAT THIS ESTABLISHES
+WHAT WE CONCLUDED ON 19 SEPTEMBER (withdrawn on 27 October 2026, see the top)
 
   The failure is inside nvattest, not in the platform, not in egress policy,
   and not in DNS. A TLS connect error from the tool, on a host that system

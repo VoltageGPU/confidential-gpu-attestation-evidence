@@ -1,0 +1,12 @@
+=== 11-curl-reference.pcap
+ 1 166.117.113.121:443   [ttl=242 ipid=0 mss=0 ws=8 ack=ok] -> no data from server, no RST (silence); guest sent 1 RST
+=== 12-baseline.pcap
+ 1 166.117.113.121:443   [ttl=243 ipid==SYN mss=0 ws=0 ack=WRONG] [ttl=242 ipid=0 mss=0 ws=8 ack=ok] -> no data from server, RST received (ttl 63/63); guest sent 1 RST
+=== 22-v2.pcap
+ 1 166.117.200.57:443    [ttl=242 ipid=0 mss=1460 ws=8 ack=ok] -> 6073 B from server, then RST ttl 242 after FIN
+ 2 166.117.200.57:443    [ttl=242 ipid=0 mss=0 ws=8 ack=ok] -> no data from server, no RST (silence)
+ 3 166.117.200.57:443    [ttl=242 ipid=0 mss=0 ws=8 ack=ok] -> no data from server, no RST (silence)
+ 4 166.117.200.57:443    [ttl=242 ipid=0 mss=1460 ws=8 ack=ok] -> 6103 B from server, then RST ttl 242 after FIN
+ 5 166.117.113.121:443   [ttl=242 ipid=0 mss=0 ws=8 ack=ok] -> no data from server, no RST (silence)
+ 6 166.117.113.121:443   [ttl=242 ipid=0 mss=1460 ws=8 ack=ok] -> 6123 B from server
+ 7 166.117.56.89:443     [ttl=243 ipid==SYN mss=0 ws=0 ack=WRONG] [ttl=242 ipid=0 mss=0 ws=8 ack=ok] -> no data from server, RST received (ttl 63); guest sent 1 RST

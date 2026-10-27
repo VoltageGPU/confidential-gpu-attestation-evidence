@@ -1,0 +1,30 @@
+--- ocsp.ndis.nvidia.com
+--- rim.attestation.nvidia.com
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_128_GCM_SHA256
+Peer certificate: CN = attestation.nvidia.com
+Hash used: SHA256
+Signature type: RSA-PSS
+Verification: OK
+Server Temp Key: X25519, 253 bits
+DONE
+--- nras.attestation.nvidia.com
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN = *.attestation.nvidia.com
+Hash used: SHA256
+Signature type: RSA-PSS
+Verification: OK
+Server Temp Key: X25519, 253 bits
+DONE
+ 0 s:CN = *.attestation.nvidia.com
+   i:C = US, O = Google Trust Services, CN = WR3
+   v:NotBefore: Oct  2 18:58:16 2026 GMT; NotAfter: Dec 31 19:54:11 2026 GMT
+ 1 s:C = US, O = Google Trust Services, CN = WR3
+   i:C = US, O = Google Trust Services LLC, CN = GTS Root R1
+   v:NotBefore: Dec 13 09:00:00 2023 GMT; NotAfter: Feb 20 14:00:00 2029 GMT
+ 2 s:C = US, O = Google Trust Services LLC, CN = GTS Root R1
+   i:C = BE, O = GlobalSign nv-sa, OU = Root CA, CN = GlobalSign Root CA
+   v:NotBefore: Jun 19 00:00:42 2020 GMT; NotAfter: Jan 28 00:00:42 2028 GMT
