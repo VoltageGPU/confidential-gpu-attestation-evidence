@@ -1,4 +1,4 @@
-NVSwitch attestation diagnosis, 8x H100 VM (h100-xlarge, host 199.73.48.134), 10 September 2026, second VM wrk-sixplt0aeids
+NVSwitch attestation diagnosis, 8x H100 VM (h100-xlarge, host [redacted]), 10 September 2026, second VM wrk-sixplt0aeids
 
 === lspci -nn | grep -i nvidia ===
 01:00.0 3D controller [0302]: NVIDIA Corporation GH100 [H100 SXM5 80GB] [10de:2330] (rev a1)

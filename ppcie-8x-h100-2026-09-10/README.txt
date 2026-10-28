@@ -42,7 +42,7 @@ node-state.txt        nvidia-smi conf-compute -q, per-GPU driver/VBIOS/bus id,
 attestation-run.txt   Console output of the run, both attempts (GPU + switch,
                       then GPU only).
 
-Host: 199.73.48.134, 8x NVIDIA H100 80GB HBM3, driver 595.71.05, VBIOS
+Host: [redacted], 8x NVIDIA H100 80GB HBM3, driver 595.71.05, VBIOS
 96.00.CF.00.01, 96 vCPU, 1.3 TB RAM. The VM was deleted after the capture.
 
 nvswitch-diag.txt     Second VM on the same host, 10 September 2026: lspci (8 GPUs
@@ -51,3 +51,7 @@ nvswitch-diag.txt     Second VM on the same host, 10 September 2026: lspci (8 GP
                       with "undefined symbol: nscq_session_create" (no
                       libnvidia-nscq in the image), hence NRAS INVALID_EVIDENCE
                       on the switch endpoint. GPU attestation succeeded again.
+
+27 October 2026: the host's IP address is masked in README.txt, node-state.txt
+(first line, the SSH warning) and nvswitch-diag.txt (first line). Nothing else
+in these files changed; nras_token.json is untouched.
